@@ -1,0 +1,70 @@
+<!DOCTYPE html><!--html5-->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet"  href="./css/library/reset.css" />
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <!--cc:ie6 tab-->
+    <!--[if lte IE 9]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+    <script src="./js/dist/PIE.js"></script>
+    <script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    <!--하위버전 호환-->
+
+    <title>Document</title>
+    <style>
+        #wrap{width: 960px;height: 500px; margin: 0 auto;background-color: #ccc;}
+            h1{width: 100%;height: 50px;border-bottom: 2px solid #fff;padding-bottom: 5px;}
+        #wrap>div{width: 50%;height: 400px;float: left;outline: 1px solid #777;}
+        #wrap>div>p{width: 100%; height: 25px;background-color: #fff; text-align: center;line-height: 25px;}/*line-height는 줄 간격 박스 세로크기로 */
+         #box1{background-color: #faa;}
+            #imgbox{width: 90%;margin-left: 5%; height: 350px; background-color: #acf;}
+        #imgbox>img{width:300px;}/*img 크기를 명확히 지정해야 내가 원하는 크기로 불러올 수 있음*/
+         #box2{background-color: #aad;}
+            #bgbox{width: 90%; margin-left: 5%;height: 350px; background-color: #fdf;
+                background-image: url(img/day_01/stitch.jpg);
+                background-repeat: no-repeat;
+                background-position:-50px center;
+        }
+               /* text-indent: -9999 em;*/
+        /*text-indent 단위는 em (px은 고해상도 모니터에서는 보일 수 있음)*/
+            #bgbox>span{width: 0;height: 0; display: block;overflow: hidden;}/* = position:fixed; z-index:-100;*/
+ 
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+    <!--css, script: html5 에서는 type=""를 기본으로 인지-->
+</head>
+<body>
+   <div id="wrap">
+    <h1>img VS background</h1>
+    <div id="box1">
+        <p>이미지태그를 사용한 예</p>
+        <div id="imgbox">
+            <img src="img/day_01/stitch.jpg" alt="소녀소녀한 이미지" />
+
+        </div><!--//#imgbox-->
+    </div><!--//#box1-->
+    <hr />
+    <div id="box2">
+        <p>배경이미지를 사용한 예</p>
+        <div id="bgbox">
+            <span>불꽃 아이콘</span>
+        </div><!--//#bgbox-->
+    </div>
+    <!--//#box2-->
+</div>
+<!--//#wrap-->
+</body>
+</html>

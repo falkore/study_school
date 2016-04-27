@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "./lib/basic.scss";
+
+
+
+// cerfi.css
+#wrap {width: 450px; height: 365px; margin: 0 auto; 
+  #certify {width: 412px; height: 45px; background-color:$main;
+      padding-top:28px; padding-left:38px;
+    h1 {color:$white;  font-size:1.375rem; line-height:1.375; 
+      font-weight:bold;}
+  } // #certify
+  
+  
+  #content {width:calc(100% - 76px); height: 256px; padding: 18px 38px;
+    h2 {width: 100%; height: 18px; margin-bottom: 8px; font-size:1.25rem; 
+      line-height: 1.25rem; //font-family: "noto_sans_krblack"; 
+      overflow: visible;}
+    p { width: 100%; height: 32px; font-size: .875rem; margin-bottom: 12px; }
+
+    form {width: 375px; height: 187px; 
+    .telCheck {
+      width: calc(100% - 18px); height: 56px; background-color:$sub1; 
+      padding: 20px 9px; margin-bottom:10px;
+      >dl{width: 100%; height: 20px; background-color: #fff;
+          &.telNumber{margin-bottom: 18px;
+            >dd{
+              select{width: 75px; height: 100%; float:left; border:$line; 
+                 font:100%/120% "myriad pro";}
+              input{width: 75px; height: 100%; float:left; border:$line; 
+                box-sizing: border-box; text-indent:0.312rem; 
+                line-height:1.1rem;}
+              >label{@extend %hidden;}
+
+              }
+            .telLine{width: 7px; height:calc(50% - 1px); float: right;
+              border-bottom: 1px solid $sub2; display:inline-block;   
+            }
+        }// telNumber
+          &.telecom{
+            input[type="radio"]{width: 18px; height: 18px; margin:1px;}
+            }  
+        
+        >dt{ width: 70px; height: 100%; float: left; margin-right: 10px; 
+          >label{font-size:0.875rem; letter-spacing:-0.0625; font-weight:bold;
+          font-family:'noto_sans_krbold';}
+        }//dt
+        >dd{ width: 85px; height: 100%; float: left; margin-right:5px; 
+          &:last-child{margin-right: 0;}
+        
+          }// dd
+        }// dl
+      }// .telCheck
+    .checkSend { width: 100%; height: 82px; background-color:#ccf;   
+     
+      }// .checkSend
+    }// form
+  }// #content
+}// #wrap
+
+
+
+
+
+
+

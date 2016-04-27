@@ -1,0 +1,30 @@
+//gnb.scss
+
+#gnb{width: 100%; height: 30px; float: left;
+    background-color: $baseGray; 
+    >ul{width: 435px; height: 100%; float: right;
+     >li{width: 95px; height: 100%; float: left;
+        &:nth-child(3){width: 245px;}
+        /*  or >li:nth-child(3){width: 245px;}*/
+         >a{width: calc(100%-2px); margin: 0 1px;}
+        }// li
+    }// ul
+
+    
+}// #gnb
+#gnb{
+    >ul>li{// &=li
+        &:nth-child(1){
+            background-image: url("../img/index/nav/home.png");
+            &:hover{
+            background-image: url("../img/index/nav/study.png");}
+        }
+        &:nth-child(2){
+            background-image: url("../img/index/nav/study.png");
+        }
+        &:nth-child(3){
+            background-image: url("../img/index/nav/education.png");
+        }
+    }// li
+    
+}// #gnb

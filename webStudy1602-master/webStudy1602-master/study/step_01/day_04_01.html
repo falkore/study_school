@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1.0" />
+	<link rel="apple-touch-icon" href="#" />
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	
+	<title>Document</title>
+	<style type="text/css">
+		table, tr, th, td, thead, tbody, tfoot{
+			border-width:1px; border-style:solid; border-color:#333;
+			border-spacing: 0; border-collapse:collapse;
+		}
+		table{width:600px; height: 500px;}
+		thead{background-color:#aff;}
+		tfoot{background-color: #fac;}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>table이해하기~~~~2</h1>
+		<table summary="테이블의 상세한 내용을 추가로 이해할 수있다.">
+			<caption>테이블 구조이해2</caption>
+			<thead>
+				<tr>
+					<th scope="col">number</th>
+					<th scope="col">아이디</th>
+					<th scope="col">이름</th>
+					<th scope="col">내용</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr> <td scope="row">총</td> <td colspan="3">...</td> </tr>
+			</tfoot>
+			<tbody>
+				<tr> <td scope="row">1</td> <td>cool</td><td>영복</td><td rowspan="3">aaa</td></tr>
+				<tr> <td scope="row">2</td> <td>cold</td>      <td>도형</td>																	</tr>
+				<tr> <td scope="row">3</td> <td>warm</td>   <td>성우</td>											</tr>
+				<tr> <td scope="row">4</td> <td>hot</td>        <td>철수</td> <td>sv</td> </tr>
+				<tr> <td scope="row">5</td> <td>soso</td>      <td>영희</td> <td>asdf</td> </tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

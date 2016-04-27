@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/join.css" />
+    <!--[if lte IE 6]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+    <script src="./js/dist/PIE.js"></script>
+    <script src="./js/dist/respond.min.js"></script>   
+    <![endif]-->
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>회원가입_JOIN</title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <div id="join_container">
+       <h1>회원가입란</h1>
+        <form action="#" method="post">
+            <fieldset class="join_01">
+                <legend>기본 계정 만들기</legend>
+                <ul>
+                    <li class="join_box_01">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="user" class="jImg">
+                                  <span>아이디 여섯글자에서 열두글자 사이를 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="user" id="user" value="" required placeholder="아이디 입력" maxlength="12" />
+                            </dd>
+                            <dd>
+                              <button type="button" name="idCheck" class="jImg">
+                                <span>아이디 중복확인</span>
+                              </button>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_01-->
+                    <li class="join_box_02">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="pwd" class="jImg">
+                                  <span>비밀번호 다섯글자에서 열다섯글자 사이를 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="pwd" id="pwd" value="" required placeholder="비밀번호 입력" maxlength="15" />
+                            </dd>
+                            <dd>
+                              <span class="jImg me-hidden"><i class="me-hidden"></i></span>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_02-->
+                    <li class="join_box_03">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="re_pwd" class="jImg">
+                                  <span>한번 더 입력하세요.(비밀번호 확인용입니다.)</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="re_pwd" id="re_pwd" value="" required placeholder="비밀번호 한번 더 입력" maxlength="15" />
+                            </dd>
+                            <dd>
+                              <span class="jImg"><i class="me-hidden"></i></span>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_03-->
+                </ul>
+            </fieldset>
+            <fieldset class="join_02">
+                <legend>인적사항</legend>
+                <ul>
+                    <li class="join_box_04">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="name" class="jImg">
+                                  <span>성명을 기입해주세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="name" id="name" value="" required placeholder="이름 입력" maxlength="8"/>
+                            </dd>
+                            <dd>
+                              <span class="jImg"><i class="me-hidden"></i></span>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_04-->
+                    <li class="join_box_05">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="nickname" class="jImg">
+                                  <span>별명 한글자에서 열두글자 사이를 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="nickname" id="nickname" value="" required placeholder="별명 입력" maxlength="12" />
+                            </dd>
+                            <dd>
+                              <button type="button" name="nickCheck" class="jImg">
+                                <span>별명 중복확인</span>
+                              </button>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_05-->
+                    <li class="join_box_06">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="phone" class="jImg">
+                                  <span>연락처를 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <select name="first-num" id="first-num">
+                                  <option value="010">010</option>
+                                  <option value="011">011</option>
+                                  <option value="012">012</option>
+                                  <option value="013">013</option>
+                                  <option value="014">014</option>
+                                  <option value="016">016</option>
+                                  <option value="017">017</option>
+                                  <option value="018">018</option>
+                                  <option value="019">019</option>
+                              </select>
+                              <span class="line jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="mid_num" id="mid_num" required maxlength="4"/>
+                              <label for="mid_num">가운데 번호를 입력하세요.</label>
+                              <span class="line jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="last_num" id="last_num" required maxlength="4"/>
+                              <label for="last_num">마지막 번호를 입력하세요.</label>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_06-->
+                    <li class="join_box_07">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="email" class="jImg">
+                                  <span>이메일 주소를 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="email_01" id="email_01" required />
+                              <label for="email_01">이메일 주소 앞 부분을 입력하세요.</label>
+                              <span class="jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="email_02" id="email_02" required />
+                              <label for="email_02">이메일 주소 뒷 부분을 입력하세요.</label>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_07-->
+                </ul>
+            </fieldset>
+            <fieldset class="join_03">
+                <legend>추가사항</legend>
+                <ul>
+                    <li class="join_box_08">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="birth_year" class="jImg">
+                                  <span>생년월일을 입력하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="birth_year" id="birth_year" required maxlength="4"/>
+                              <label for="birth_year">태어난 연도를 입력하세요.</label>
+                              <span class="jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="birth_month" id="birth_month" required maxlength="2"/>
+                              <label for="birth_month">태어난 달을 입력하세요.</label>
+                              <span class="jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="birth_day" id="birth_day" required maxlength="2"/>
+                              <label for="birth_day">태어난 날짜를 입력하세요.</label>
+                              <span class="jImg"></span>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_08-->
+                    <li class="join_box_09">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="post_num" class="jImg">
+                                  <span>우편번호를 검색하세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="post_num" id="post_num" required maxlength="4"/>
+                              <label for="post_num">앞부분 번호를 입력하세요.</label>
+                              <span class="line jImg"></span>
+                            </dd>
+                            <dd>
+                              <input type="text" name="post_num_02" id="post_num_02" required maxlength="4"/>
+                              <label for="post_num_02">마지막 번호를 입력하세요.</label>
+                            </dd>
+                            <dd>
+                              <button type="button" name="idCheck" class="jImg">
+                                <span>우편번호 중복확인</span>
+                              </button>
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_09-->
+                    <li class="join_box_10">
+                        <dl>
+                            <dt>
+                              <i class="jImg"></i>
+                              <label for="address" class="jImg">
+                                  <span>주소를 기입해주세요.</span>
+                              </label>
+                            </dt>
+                            <dd>
+                              <input type="text" name="address" id="address" value="" required placeholder="주소 입력" />
+                            </dd>
+                        </dl>
+                    </li><!--// .join_box_10-->
+                </ul>
+            </fieldset>
+            <fieldset class="join_04">
+                <legend>동의 및 취소</legend>
+                <ul>
+                    <li>
+                        <button type="submit" name="submit" class="jImg">
+                          <span>동의 버튼</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="reset" name="cancel" class="jImg">
+                          <span>취소 버튼</span>
+                        </button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div><!--// #join_container-->
+</body>
+</html>

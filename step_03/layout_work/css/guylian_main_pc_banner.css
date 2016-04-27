@@ -1,0 +1,13 @@
+
+#banner{width: 1200px; height: 676px;float: left;}
+#banner>ul>li>a{height: 100%; float: left;display:block;background-repeat: no-repeat;background-position: center center;}
+
+.banner_01{width:850px;height:436px;background-color: #682618;margin: 0 auto;position:absolute; z-index: 0;}
+.banner_02{width:1200px;height:436px;background-color: #682618;margin: 0 auto;position:absolute; z-index: 100;}
+.banner_03{width: 940px;height: 200px;margin: 20px auto;background-color: #fff;position:absolute;top: 618px;z-index: 0;}
+.banner_04{width: 1200px;height: 200px;margin: 20px auto;background-color: #fff;position:absolute;top: 618px; z-index: 100;}
+
+.banner_01>a{width: 850px;background-image: url("../img/banner/banner_02.png");}
+.banner_02>a{width: 1200px;background-image: url("../img/banner/Layer-2_02.png");}
+.banner_03>a{width: 960px;background-image: url("../img/banner_2/banner_2_02.png");}
+.banner_04>a{width: 1200px;background-image: url("../img/banner_2/banner_2.png");}

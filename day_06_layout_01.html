@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+     <!--[if lte IE 9]>
+    
+    <![endif]-->
+    <title>RESET CSS----CSS 초기화</title>
+    <style type="text/css">
+        /*모든 브라우저는 저마다 자신만의 여백 또는 기타 다양한 속성값이 존재한다.
+            별도의 브라우저를 올바르게 작업하려면 모든 브라우저의 속성값을 초기화시켜야한다. .......   이것을 RESET CSS 라고 함
+            BLOCK TAG 에는 하나하나 마진 0, 패딩 0 부여
+            margin : 외부여백(바깥의 공백을 만드는 기능)
+            padding : 내부여백(주어진 크기의 부피를 크게 만드는 기능, 실제로 정해진 크기의 안쪽으로 공간이 생기는게 아니고 별도의 3자가 보기에 더 커보이는 효과)
+            border : 외곽선(일러스트레이터의 strock 와 같은 기능, 하지만 정해진 상자크기의 외곽에 생기는 크기)
+            outline : 외곽선(border와 형태는 유사하나 면적값을 가지지는 못한다. ...... 크기는 있고 부피는 없다)
+            vertical-align : 텍스트의 위치 상단, 중단, 하단 모두 적용되지는 않음!! 텍스트 작성시 기준되는 위치선정
+            폰트사이즈는 보통 100%
+            줄간격(line-height)는 보통 120%(1.2)
+            Font-family 는 "영어" 먼저 "한글" 다음에   .........익스플로러는 띄어쓰기 없으면 따옴표 쓰지 말아야 함 .........서체지원이 안될 경우를 대비해 여러개 선택해서 써줌*/
+        
+        *, body, html, div, h1, h2, h3, h4, h5, h6, p textarea, img{margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; font-size: 100%;line-height: 120%; font-family: "myriad pro", arial, nanumGothic, dotum, sans-serif; color: #333;
+        }
+        ul, ol, li{list-style: none;}
+        /*리스트 기본 스타일을 없애면 내가 원하는 스타일로 재 설정 가능*/
+        a, a: active, a: visited{text-decoration: none; color: #777;}
+        a:hover{text-decoration: underline; color: #f06;}/*text-decoration은 링크 하단의 밑줄*/
+        
+       body, html{height: 100%;}
+        /*익스플로러는 html 로 인지., 그 외 브라우저는 body 로 인지*/
+        
+        
+        #wrap{width: 100%; height: 100%; background-color: #fdc;}
+
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>text</h1>
+        <h2>text_test</h2>
+        <h3>text_test</h3>
+        <h4>text_test</h4>
+        <h5>text_test</h5>
+        <h6>text_test</h6>
+        <p>테스트</p>
+        <ul>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>        
+        </ul>
+        <ol>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>
+            <li>list_test</li>
+        </ol>
+        <a href="#">a 태그는 링크입니다.</a>
+        
+    </div><!--//#wrap-->
+</body>
+</html>

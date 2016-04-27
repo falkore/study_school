@@ -1,0 +1,101 @@
+
+/*index.css*/
+body, html{height: 100%;}
+#wrap{width: 980px; height: 850px; margin: 0 auto;}
+#gnb {width: 100%; height: 30px;  float: left;  
+    background-color: #888;}
+    #gnb>ul {width:435px; height:100%; float: right;}
+    #gnb>ul li {width: 95px; height: 100%; float: left;}
+    #gnb>ul li:nth-child(1) {}
+    #gnb>ul li:nth-child(2) {}
+    #gnb>ul li:nth-child(3) {width:245px;}
+    #gnb>ul a {width:calc(100% - 2px); margin:0 1px;}
+
+    #gnb>ul li:nth-child(1){
+        background-image:url("../img/index/nav/home.png");}
+    #gnb>ul li:nth-child(1):hover{background-image:url("../img/index/nav/study.png");}
+    #gnb>ul li:nth-child(2){
+        background-image:url("../img/index/nav/study.png");}
+    #gnb>ul li:nth-child(3){
+        background-image:url("../img/index/nav/education.png");}
+    #gnb>ul span {}
+/*------- #gcassHead ---------------------------------------*/
+#gcassHead {width: 156px; height: 655px; float: left; 
+    background-color: #555; padding:55px 52px 0 42px;}
+h1{width: 100%; height: 104px;}
+h1>a{ background-image: url("../img/index/header/logo.png");
+      background-position: center;}
+#mainMenu {width:100%; height:455px; margin-top:42px;}
+#mainMenu > ul {width:100%; height:100%;}
+#mainMenu > ul > li {width:100%; height:38px; margin-bottom:26px;}
+
+#mainMenu>ul>li:last-child{height: 112px; margin-top: 60px;}
+
+#mainMenu>ul>li>a {background-image: url("../img/index/header/nav_mainMenu.png");
+    transition:all 0.5s ease-in;}
+#mainMenu>ul>li{transition:all 0.3s ease-in;}
+#mainMenu>ul>li:hover{transform:scale(1.1) translateX(30px);}
+#mainMenu>ul>li>a:hover {background-image: url("../img/index/header/nav_mainMenu_on.png");}
+#mainMenu>ul>li:nth-child(1)>a{background-position:0 0;}
+#mainMenu>ul>li:nth-child(2)>a{background-position:0 -62px;}
+#mainMenu>ul>li:nth-child(3)>a{background-position:0 -124px;}
+#mainMenu>ul>li:nth-child(4)>a{background-position:0 -186px;}
+#mainMenu>ul>li:nth-child(5)>a{background-position:0 -248px;}
+#mainMenu>ul>li:nth-child(6)>a{background-position:0 -344px;}
+/* #container-------------------------------------------- */
+#container {width:730px; height: 710px;  float: right;  
+    background-color: #adadad; background-repeat:no-repeat;
+    background-image:url(../img/index/article/adText.png);
+    background-position:88% 50px;}
+.patternBox {width: 100%; height: 50px; 
+    background-image: url("../img/index/article/pattern_sam.png");}
+.adCom {width: 330px; height: 520px; margin-left: 65px; margin-top: 120px;}
+.adCom a {background-image: url("../img/index/article/computer.png");
+    transition:all 0.5s ease-out 0.5s;}
+.adCom a:hover{background-image: url("../img/index/article/computer_on.png");
+    transform:translateX(50px);}
+
+/* #gcassFoot-------------------------------------------- */
+#gcassFoot {width:calc(100% - 84px); height:42px; float:left; padding:20px 42px 28px;}
+#gcassFoot>h2, #gcassFoot>div{height: 100%; float: left;}
+#gcassFoot h2 {
+    width: 70px; float: left;
+    background-repeat: no-repeat;
+    background-image: url("../img/index/foot/foot_logo.png");
+    background-position: center center;}
+#gcassFoot h2>span{font-size:inherit;}
+.sns {width: 110px; margin:0 15px;}
+    .sns>ul{width: 100%; height:30px; margin-top:12px;}
+    .sns>ul>li {width:calc(100% / 3); height: 100%; float: left;}
+    .sns>ul a {width:70%; margin-left:15%; font-size:1.875rem;}
+.sns>ul a:hover{text-decoration: none; color:#555;}
+.addBox {width: 380px; background-color: #aaf;}
+    #gcassFoot .addBox h3 {}
+    #gcassFoot address {}
+    #gcassFoot p {}
+    .family {width: 300px; height: 150px;
+    background-color: #ffa; float: right; margin-top:-88px;}
+    .family ul {}
+    #gcassFoot .family li {}
+    #gcassFoot dl {}
+    #gcassFoot dt {}
+    #gcassFoot dt a {}
+    #gcassFoot dd {}
+    #gcassFoot dd a {}
+
+/* 배경꾸미기 */
+body{ overflow-x: hidden; position: relative; }
+.bgBox{width: 100%; position: absolute; z-index: -100; }
+.topLeft{height:30px; top:0; background-color:#888; right:50%;}
+.topRight{height:30px; top:0; background-color:#fff30d; left:50%;}
+.conLeft{height:710px; top:30px; background-color:#555; right:50%;}
+.conRight{height:710px; top:30px; background-color:#adadad; left:50%;}
+.bottomBox{top:740px; border-top:1px solid #333; z-index: 100;}
+
+
+
+
+
+
+
+

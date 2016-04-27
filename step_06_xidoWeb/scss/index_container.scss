@@ -1,0 +1,53 @@
+// index_container.scss
+
+#wrap {
+#container {width: 900px; min-height: 320px; height: auto; 
+    padding: 20px 30px; background-color: $main;
+    .info_01{width: 100%; height: 300px;
+        .infoTop{width: 100%; height: 22px;
+            >h3{width: 60px; height: 100%; padding: 0 5px; text-align: center; float: left;
+                @include fontOpt($size: 1.2rem, $style: italic);}
+            >.line{width: calc(100% - 70px - 44px); height: 18px; 
+                border-bottom: $line; border-color: #fff; 
+                float: left;}
+            >.more{width: 22px; height: 100%; float: right;
+                margin: 0 10px;
+                >a{transition: transform 0.5s ease;
+                    font-size: 1.5rem;color: $white;
+                    &:hover{transform: rotate(45deg);
+                        color: $white; text-decoration: none;}
+                }// a
+            }// .more
+        }// .infoTop
+        .infoNar{width: 100%; height: auto; 
+          margin-top: 16px; 
+          display: -webkit-flex;
+          display: flex;
+          //&::before, &::after{content: ""; display: block; clear: both;}
+            >.infoAll{width: 130px; height: 280px; float: left;
+                padding: 20px 30px 20px 220px;
+                background-image: url(../img/main/article/article_box_01.png);
+                background-repeat: no-repeat;
+                >ul{width: 100%; height: 100%;
+                    >li{width: 100%; height: 40px;
+                        >a{line-height: 40px; text-decoration: underline; color: $white;
+                            &:hover{color: $main; font-weight: bold;}}
+                    }// li
+                }// ul
+            }// .infoAll
+            >.infoText{width: calc(100% - 380px); height: 280px; float: left;
+                background-image: linear-gradient(135deg, $main 50%, $black);
+                .infoImg{width: 240px; height: 100%; overflow: hidden; float: left;
+                    img{height: 100%;}
+                }//.infoImg
+                    .infoTextBox{width: calc(100% - 280px); height: 240px; float: left;
+                        padding: 20px; overflow: hidden;
+                        p{width: 100%; height: 100%; float: left;
+                          padding-right: 100%; color: $white;
+                          overflow-y : auto;}
+                }// .infoTextBox
+            }// .infoText
+        }// .infoNar
+    }// .info_01
+}// #container
+}// #wrap 

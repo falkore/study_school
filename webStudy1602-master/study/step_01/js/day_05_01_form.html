@@ -1,0 +1,83 @@
+<!--day_05_01_form.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko_KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<link rel="apple-touch-icon" href="#" />
+	<!--cc:ie6 -->
+	<!--[if lte IE 9]>
+		
+	<![endif]-->
+	<title>form_구성 기초</title>
+	<style type="text/css">
+		#user{background-color: #fac;}
+		.hidden{display: inline-block; width: 0; height: 0; overflow: hidden;}
+	</style>
+	<script type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="wrap">
+		<h1>form구조 이해하기</h1>
+		<form action="day_05_01_form.php" id="" name="" method="post">
+			<fieldset id="field_01">
+				<legend>입력</legend>
+				<label for="user">아이디<span class="hidden">를 입력하세요.</span></label>
+				<input type="text" name="user" id="user" value="" maxlength="5" size="20" /><br />
+				<label for="pwd">비밀번호<span class="hidden">를 입력하세요.</span></label>
+				<input type="password" name="pwd" id="pwd" value="" maxlength="3" size="5" /><br />
+				<input type="hidden" name="noneView" id="noneView" value="" />
+				<!--	type="hidden" 관리자용으로 사용된다.!! 즉, label이 작성되지 않음! -->
+			</fieldset><!--// #field_01-->		
+			<!--------------------------------------------------------------->
+
+			<fieldset id="field_02">
+				<legend>선택</legend>
+				<h3>당신의 성별을 입력하세요.</h3>
+				<input type="radio" name="radioName" id="sel_01" value="" checked="checked" />
+				<label for="sel_01">남성</label>
+				<input type="radio" name="radioName" id="sel_02" value="" />
+				<label for="sel_02">여성</label>
+				<input type="radio" name="radioName" id="sel_03" value="" />
+				<label for="sel_03">아줌마</label>
+				<input type="radio" name="radioName" id="sel_04" value="" />
+				<label for="sel_04">트랜스젠더</label>
+				<hr />
+				<h3>좋아하는 사람을 선택하세요.</h3>
+				<input type="checkbox" name="chk" id="chk_01" value="" />
+				<label for="chk_01">이도형</label>
+				<input type="checkbox" name="chk" id="chk_02" value="" />
+				<label for="chk_02">도형이</label>
+				<input type="checkbox" name="chk" id="chk_03" value="" />
+				<label for="chk_03">그린컴 강사 이도형</label>
+				<input type="checkbox" name="chk" id="chk_04" value="" />
+				<label for="chk_04">앞에있는 어떤 남자</label>
+				
+			</fieldset><!--// #field_02-->
+			<!--------------------------------------------------------------->
+			<fieldset id="field_03">
+				<legend>버튼</legend>
+				
+			</fieldset><!--// #field_03-->
+			<fieldset id="field_04">
+				<legend>멀티</legend>
+				
+			</fieldset><!--// #field_04-->
+		</form><!--// form-->
+	</div><!--// #wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

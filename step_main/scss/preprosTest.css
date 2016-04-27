@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 한글 테스트 */
+/* line 4, D:/work/falkore/falkore/study/step_main/scss/preprosTest.scss */
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  margin: 0 auto; }
+  /* line 6, D:/work/falkore/falkore/study/step_main/scss/preprosTest.scss */
+  #wrap > #header {
+    width: "inherit"; }
+  /* line 7, D:/work/falkore/falkore/study/step_main/scss/preprosTest.scss */
+  #wrap > #container {
+    width: "inherit"; }
+  /* line 8, D:/work/falkore/falkore/study/step_main/scss/preprosTest.scss */
+  #wrap > #footer {
+    width: "inherit"; }
+
+/*# sourceMappingURL=preprosTest.css.map */

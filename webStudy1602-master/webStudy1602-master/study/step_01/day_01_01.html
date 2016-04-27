@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />	
+	<title>Document</title>
+	<style type="text/css">
+/*		-------   css -----   */
+		h1{background-color:#faa; color:black !important;}
+		h2{background-color:#fa0;}
+		h3, h4 {background-color: #0af;}
+		h1, h3, h6{color: #ffc;}
+		p{background-color: #aaa;}
+		.box_01{color:#3a3;}
+		p.box_01{background-color:#fcf;}
+		p .box_01{background-color:#0cf;}
+		span{background-color:#ff7;}
+		
+		b, i, u, strike, s{background-color: #fff; width:100px; height:20px; display:block;}
+		.box_02{width:500px; height:100px; background-color:#ac0;}
+		.box_02 *{color:#f00;}
+		
+	/*	
+		inline: 크기값이 x, 줄바꿈이 일어나지 않는다.
+		block: 크기값이 o, 줄바꿈이 일어난다.
+		반드시, 인라인태그는 블록태그안에 담겨야한다.
+	*/
+	</style>
+	<script type="text/javascript">
+// 한줄 주석
+/*   두줄 주석  */
+	</script>
+</head>
+<body>
+	<!--  html: 제목, 내용, 부분강조  -->
+	<h1><span>가장 중요한 제목:</span> <br />
+		문서 전체에서 단 한번만 사용이 가능!!!: 사장님</h1>
+	<h2><a href="day_02_01.html#box_02">두번째 중요한 제목: 여러번 사용이 가능: 부장</a></h2>
+	<h3>세번째 중요한 제목: 차장</h3>
+	<h4>네번째<em> 중요한 제목</em>: 과장</h4>
+	<h5>다섯번째 중요한 제목: 대리</h5>
+	<h6>가장 낮은 레벨의 제목: 주임</h6><hr />
+	<!-- 내용상의 분류가 되어 흐름이 전환되는 부분에는 hr태그를 작성한다. -->
+	<p class="box_01">내용을 작성하는 태그 줄바꿈이 없습니다. <br />
+	띄어쓰기 한번밖에 사용이 되지 않음!!!!!<br />
+	 내용상 어느부분을 일부 영역으로 별도 표기할때에는  
+	 <span class="box_01"> &lt;span&gt; 태그를 사용한다. </span>
+	 <span>&lt;span&gt; 태그는 특별한 의미가 없다!!! 밥먹고 커피마시는 사람들, 업무보다 상사한테 혼나서 대화하는 직원 </span>
+	</p>
+<!--
+	<pre>여러번의 띄어쓰기 가능합니다. 
+				여러줄 바꾸기 가능합니다.
+				심지어 탭기능이 자동으로 반응합니다.~~</pre>
+-->
+	<p>내용을 작성하는 태그는 하나가 아니라 여러개의 내용
+	 즉, 여러개의 p태그를 사용할 수 있습니다.
+	 <span> 필요하다면 수십개도 가능</span><br />
+	 그리고(&amp;)
+	 내용상 &lt;br /&gt;은 줄바꿈의 의미를 가지며, <br />
+	 &lt;p&gt;는 단락의 구분을 의미한다.
+	 </p>
+	 <hr />
+	 <p>코드중 일부는 강조를 표현하는 태그가 있다.
+	 	<b>굵은 글씨</b>,	<i>기울임</i>, <u>밑줄</u>, <strike> 취소선</strike>,
+	 	<s> 취소선</s>
+	 	사실은: 사용하지 않는 코드( 눈에보이는 사람들에 대해서만 보여주는 강조)
+	 </p>
+	 <p class="box_02"> 실제 사용해야 하는 강조는
+	 	<strong>굵은글씨</strong>, <em>기울임</em>, <ins>밑줄</ins>, <del>취소</del>
+	 	why?? 웹 접근성을 고려한 코드작성~
+	 </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

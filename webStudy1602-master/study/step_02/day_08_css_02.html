@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" href="#" />
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<!--[if lte IE 9]>
+		
+	<![endif]-->
+	<title>margin</title>
+	<style type="text/css">
+/*		RESET CSS */
+		* {margin: 0; padding: 0; border:0; vertical-align:top;}
+		h1,h2,h3,h4,h5{font-size:100%;}
+		ul, ol, li {list-style:none;}
+		ul{margin-top:50px; margin-bottom:10px;}
+		.clearfix::after, .clearfix::before{ content:''; clear:both; display: block; } 
+		
+		/*______________________________________
+		 * padding??????????
+		 * 외부 여백: 공간을 가지는 여백
+		 * padding: 하나의 값;   - 위, 아래, 좌, 우 모두같은값
+		 * padding: 둘의 값; - 위아래, 좌우 두개의 여백
+		 * padding: 셋의 값; - 위, 좌우, 아래 
+		 * padding: 넷의 값; - 위, 우, 아래, 좌(시계방향)
+		 * 별도로 사용할 경우;  
+		 * ______________________________________ */
+		#wrap{width: 900px; height:780px; background-color:#ccc; margin:0 auto;
+			padding-top:20px;}
+		h1{width: 100%; height:30px; background-color: #fa0; }
+		ul{width:100%;  border:3px solid; background-color:#acc;}
+		li{width:100px; height:100px; text-align:center; line-height:100px; float:left;}
+		.box_01{background-color:#aac; padding:10px;}/*위, 아래, 좌, 우*/
+		.box_02{background-color:#6ac; padding:10px 20px;}/* 위아래 10, 좌우 20*/
+		.box_03{background-color:#a71; padding:10px 20px 30px;}/*위10, 좌우20, 아래30*/
+		.box_04{background-color:#f50; padding:10px 20px 30px 40px;}
+		/* 시계방향 : 위10, 오른쪽20, 아래30, 왼쪽40 */
+		.box_05{background-color:#cf9; padding-left:40px; padding-top:20px;}
+		
+		#sub_box{width:100%; height:50px; background-color:#7ff;}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>padding에대해 ... </h1>
+		<ul class="clearfix">
+			<li class="box_01">padding하나</li>
+			<li class="box_02">padding둘</li>
+			<li class="box_03">padding셋</li>
+			<li class="box_04">padding넷</li>
+			<li class="box_05">padding일부</li>
+		</ul>
+		<div id="sub_box"></div>
+	</div><!--// #wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

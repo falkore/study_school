@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=960" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet" href="./font/noto/noto_sans.css" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/form_test_0422.css">
+    <!--[if lte IE 9]>
+    <script src="js/dist/html5shiv.min.js"></script>
+    <script src="js/dist/ie9.min.js"></script>
+    <script src="js/dist/PIE.js"></script>  
+    <![endif]-->
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <title>Form 연습 - 로그인</title>
+    <style></style>  
+    <script></script>
+</head>
+<body>
+    <div id="wrap">
+      <header id="certify">
+       <h1>본인 인증 서비스</h1>
+      </header>
+      <article id="content">
+       <h2>휴대폰 인증</h2>
+       <p>입력하시는 정보는 암호화 되어 처리되며,<br />
+        어떠한 비용도 발생하지 않습니다.</p>
+       <form action="#" method="post">
+            <fieldset class="tel_check">
+                <legend>휴대폰 번호 확인</legend>
+                <dl class="tel_number">
+                    <dt><label for="first_num">휴대폰번호</label></dt>
+                        <dd>
+                           <select name="first_num" id="first_num">
+                               <option value="010">010</option>
+                               <option value="011">011</option>
+                               <option value="012">012</option>
+                               <option value="013">013</option>
+                               <option value="014">014</option>
+                               <option value="016">016</option>
+                               <option value="017">017</option>
+                               <option value="018">018</option>
+                               <option value="019">019</option>
+                               <option value="0505">0505</option>
+                           </select>
+                           <span class="tel_line"><!--line--></span></dd>
+                        <dd>
+                          <input type="text" name="mid_num" id="mid_num" value="" required maxlength="4" />
+                          <label for="mid_num">휴대폰 가운데 번호 네자리를 입력하세요.</label>
+                          <span class="tel_line"><!--line--></span></dd>
+                        <dd>
+                          <label for="last_num">휴대폰 마지막 번호 네자리를 입력하세요.</label>
+                          <input type="text" name="last_num" id="last_num" value="" required maxlength="4" />
+                        
+                        </dd>
+                </dl>
+                <dl class="telecom">
+                        <dt><label for="sk">통신사 선택</label></dt>
+                        <dd>
+                          <label for="sk">sk telecom</label>
+                          <input type="radio" name="telecom" id="sk" value="" />SK</dd>
+                        <dd>
+                          <label for="kt">KT telecom</label>
+                          <input type="radio" name="telecom" id="kt" value="" />KT</dd>
+                        <dd>
+                          <label for="lg">LG telecom</label>
+                          <input type="radio" name="telecom" id="lg" value="" />LG U+</dd>
+                    
+                </dl>
+            </fieldset>
+            <fieldset class="check_send">
+                <legend>휴대폰 번호 확인 및 동의</legend>
+            </fieldset>
+        </form>
+        </article>
+    </div><!--// #wrap-->
+</body>
+</html>

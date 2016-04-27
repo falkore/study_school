@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/lib/reset.css" />
+	<title>간단한 시멘틱 구조이해</title>
+	<style>
+		#wrap{width: 960px; height: 1500px;
+			background-color: #ccc; margin: 0 auto;}
+		#main_head{width:100%; height: 300px; 
+			background-color: #7f1;}
+		#main_aside{width: 30%; height: 700px; 
+			background-color: #3ff;  float:left;}
+		#main_ar{width: 70%; height: 700px; 
+			background-color: #f88;  float:left;}
+		figure{width: 50%; height: 500px; margin-left:10px; margin-top:10px; overflow-x: hidden;}
+		figcaption{font-size:1.5em;}
+		#main_foot{width: 100%; height: 500px; 
+			background-color: #fc7; float: left;}
+		#main_ar>h2{width: 40px; height: 50px; background-color: #acc;}
+		
+
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="main_head">
+			<h1>!!!!!!</h1>
+		</header>
+		<aside id="main_aside">
+			<h2>sadfsdafasdf</h2>
+		</aside>
+		<article id="main_ar">
+		<h2>asdf;asdkf</h2>
+			<figure>
+				<img src="http://lorempixel.com/400/400" alt="이미지">
+				<figcaption>이미지 설명</figcaption>
+			</figure>
+			<section>
+				<a href="#">
+					<img src="//lorempixel.com/400/400" alt="sdasdf" />
+					<p>내용을 상세하게 설명한코드</p>
+				</a>
+			</section>
+		</article>
+		<footer id="main_foot"></footer>
+	</div><!--// #wrap-->
+</body>
+</html>
+
+
+
+
+
+

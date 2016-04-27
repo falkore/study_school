@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/sam_01.js"></script>
+    <title>Document</title>
+    <script>
+      var box, bottle, back, wrap;
+          box = "green ";
+          bottle = "brown ";
+          back = box + bottle;
+          wrap = back + "무슨 색일까요?";
+      document.write("<p>" + wrap + "</p>");
+      
+    </script>
+</head>
+<body>
+    <div>
+        <script></script>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+/*
+    console.log(wrap);
+      document.write("<p>" + wrap + "</p>");
+        
+      document.getElementsByClassName("box");
+    document.getElementById();
+      document.getElementByTagName();
+    // ECMA 3 ver.
+      document.querySelector();
+    // ECMA 5 ver.
+
+     $("#box")  --jQuery
+        */
+  
+   var inBox = document.getElementsByClassName("box");
+        
+      inBox[0].innerHTML = "<p>" + box + "</p>";
+      inBox[1].innerHTML = "<p>" + bottle + "</p>";
+      inBox[2].innerHTML = "<p>" + back + "</p>";
+      inBox[3].innerHTML = "<p>" + wrap + "</p>";
+    </script>
+</body>
+</html>

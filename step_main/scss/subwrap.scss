@@ -1,0 +1,23 @@
+//subwrap.scss
+
+body, html{min-height: 100%; height:auto; position: relative;}
+#wrap{width: 980px; min-height: 850px; height:auto;
+    margin: 0 auto;}
+
+/* background_design */
+body{ overflow-x: hidden; position: relative; }
+.bgBox{width: 100%; position: absolute; z-index: -100; }
+.topLeft{height:30px; top:0; background-color:$baseGray; right:50%;}
+.topRight{height:30px; top:0;
+    background-color:$mainYellow; left:50%;}
+//.conLeft{height:710px; top:30px; background-color:$deepGray ; right:50%;}
+//.conRight{height:710px; top:30px; background-color:$lightGray; left:50%;}
+.bottomBox{top:740px; 
+    border-top:$line; z-index: 100;}
+ 
+
+
+
+
+
+

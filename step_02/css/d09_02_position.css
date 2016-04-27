@@ -1,0 +1,36 @@
+/*d09_02_position.css*/
+body{height: 5000px;}
+#wrap{width: 700px; height: 500px; background-color: #ddd; margin: 300px auto;}
+h1{width: 100%; font-size:1.5rem; font-weight: bold; background-color: #aaf; text-align: center;}
+.position_box{width: 500px;height: 400px; background-color: #faa; margin: 50px auto;}
+    .position_box>li{width: 100px; height: 100px;float: left;text-align: center; line-height: 100px;}
+    .static{background-color: #faf;}
+    .fixed{background-color: #f0d;}
+    .absolute{background-color: #ffd;}
+    .relative{background-color: #f7a;}
+    .none{background-color: #fa0;}
+
+/*
+포지션 이해_ position
+------------------------------------------------
+*static : 기본(z-index, top, left, right, bottom 사용할 수 없음)
+*fixed : 화면고정(스크롤 사용해도 변화가 없다.)
+*absolute : 부모가 필요하다.(기준 부모는 relative)
+                    부모가 없으면 고정이 안됨.
+*relative : 기본엄마 ( absolute의 기준)
+----------------------------------------------
+*z-index : 레이어의 개념
+*top, left, right, bottom : 위치를 잡아주기 위한 형태
+                         (margin 과 헷갈리면 안됨~!!!)
+
+* **** !!!! Position 은 함부로 마구 사용하면 안 됨
+                     (추후 보정이 힘들다~!!!!!!!)
+
+*/
+
+
+    .static{position: static; z-index: -1000; top:0;}
+    .fixed{position: fixed; bottom:0;left:500px;z-index:200;}
+    .absolute{position: absolute;right:0;bottom:0; left:550px;z-index:100}
+    .relative{position: relative; top:100px;left:0;z-index:500;}
+   

@@ -1,0 +1,44 @@
+/*  background.css  */
+.fixed{background-attachment: fixed;}
+#wrap{width: 100%;height: 1800px;margin: 0 auto;background-color: #ccc;}
+#wrap  *{background-repeat:no-repeat; }
+#wrap > * {width: 100%; border-bottom:1px solid #ddd;}
+	#webHead {height:600px; background-image: url("../img/background/fix1.jpg");
+	background-size: 100%;}
+	#webHead h1 {width: 100%; height: 100px; line-height: 40px; color:#fff;
+		text-align: center; font-size:1.5em; font-weight: bold; background-position: center;
+		background-image: url("../img/background/sc1.jpg");
+		position: fixed; top: 0; left: 0;} 
+
+	#banner {height:1200px; background-image: url("../img/background/fix2.jpg"); 
+		background-size: cover;
+	}
+
+		.viewH2{width:100%; height:130px; line-height:30px; text-indent:1rem; 
+			font-size:1.3em; font-weight:bold; background-position: center;
+			background-image: url("../img/background/sc2.jpg"); transition:all 1s;} 
+		.viewH2:hover{background-color: rgba(255,255,255,0.2)}
+	#banner2 {height:1000px;  background-image: url("../img/background/fix3.jpg");
+		}
+	#banner2 h2{ position: relative; z-index: 100;}
+	#widthBox {height:800px; background-color:#acf;}
+	#widthBox>div{width: 50%; height: 100%; float: left; }
+	#widthBox h3{width: 100%; height: 15px; border-bottom: 1px solid; 
+		text-shadow:1px 1px 1px #333; color:#fff; font-size:1rem; padding:5px; text-indent:1rem;}
+	#wrap #widthBox .box01 {background-image: url("../img/background/bg_01.jpg");
+		background-attachment:fixed; background-size:50%; }
+	#widthBox .box01 > h3 {}
+	#widthBox .box02 {background-image: url("../img/background/bg_01.jpg");
+		background-attachment:scroll;}
+	#widthBox .box02 > h3 {}
+
+
+
+
+
+
+
+
+
+
+

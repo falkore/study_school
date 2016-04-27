@@ -1,0 +1,65 @@
+// header.scss
+
+$source: "../img/all/header/";
+
+#wrap {
+>#headerWrap{width: 100%; height:60px;
+    background-image:linear-gradient(90deg, $sub2 50%, $main 50%);
+  #xidoHead {
+    width: 960px; height: 50px; margin: 0 auto; 
+    background-color:$main; padding-top:10px;
+    position: relative;
+    >h1{width: 150px; height:60px; float: left; background-color:$sub2; margin-top: -10px;}
+    >h1>a{@extend %link; font-size: 2em; color:$white;
+      background-image: url($source + "logo.png");
+      background-position: center;}
+    .narImg{width: 300px; height: 40px; float: left; 
+      margin-left: 20px;
+      background-image: url($source+"nar.png");
+      background-repeat: no-repeat;}
+    .sitemap{width: 146px; height: 40px; float: right; 
+      margin-right: 40px;
+        >ul{width: 100%; height: 50%;
+          li{width: calc(100% / 3); height: 100%; float: left;
+          text-align: right;
+            a{color: $white; font-size: 1.167rem; font-style: italic; font-weight: bold;
+              line-height: 1.25rem; line-height: 20px; letter-spacing: -0.0625rem; word-spacing: -0.15rem;
+              &:hover{}
+            }// a
+          }// li
+        }// ul
+        form{width: 100%; height: 50%; margin-top: 3px;
+          fieldset{width: 100%; height: 100%; 
+            >legend{}
+          #searchBox{width: 125px; height: 100%; float: left;
+            text-indent: 0.3rem; line-height: 20px; border: 0;}
+          label[for="searchBox"]{@extend %hidden;}
+          button{width: 21px; height: 20px; cursor: pointer;
+              font-size: 1.1rem; color: $white;
+              background-color: $sub2;
+            span{@extend %hidden;}
+            }// button 
+          }// fieldset
+        }// form
+      }// .sitemap
+    #xidoNav{width: 800px; height: 30px;
+      border-bottom:$line; right:10px; bottom:-31px;
+      position: absolute; z-index: 1000;
+      margin-top:10px;
+        >ul{width: 100%; height: 100%;
+            >li{width: auto; height: 100%; float: left;
+                margin-right: 50px; margin-right: 3.125rem;/*  50px=3.125rem : 50 / 16  */
+                &:first-child{margin-left: 20px; margin-left: 1.25rem;}
+                &:last-child{margin-right: 0;}
+                >a{font-size: 1.167rem; font-weight: normal; color: $sub2;
+                  line-height: 1.875;  letter-spacing: -0.0625rem;
+                    &:hover{color: $main; text-decoration: none;}    
+                }
+            }//li
+        }// ul
+      }// #xidoNav
+    }// #xidoHead
+    
+  }// #headerWrap
+    
+}// #wrap

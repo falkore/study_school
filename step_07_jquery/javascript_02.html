@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 함수 사용법 1 : 생성자 함수
+        var a = 5;
+        function box(){
+            var test1 = 7;
+            console.log(a + test1);
+        };
+            box();
+    // 함수 사용법 2 : 함수 표현
+        var box2 = function(){
+            var test2 = "두 번째 보이기";
+            console.log(test2);
+        };
+            box2();
+        
+    // 함수 사용법 3 : 즉시실행함수(IIFE)
+        (function(){
+            var test3 = "세 번째"
+            console.log(test3 + " 나오려나");
+        })();
+        
+    </script>
+</body>
+</html>

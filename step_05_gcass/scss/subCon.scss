@@ -1,0 +1,63 @@
+// subCon.scss
+
+/*#wrap::after{content:""; display: block; clear: both;}*/
+#container {
+    width: 670px; height: 1200px;
+    margin: 115px 48px 0 22px; float: right;
+    >hgroup {width: 100%; height: 45px; margin-bottom: 36px;
+        color: lighten($lightGray, 50%);
+        >h2 {width: 204px; height: 100%; float: right;
+            font-size: 2.5rem; color: inherit;}
+        >h3 {width: 270px; height: 100%; float: right;
+            padding-top: 13px;
+            font-size: 1.5rem; color: inherit;}
+    }// hgroup
+    >#subject {width: 100%; height: 553px; margin-bottom: 42px;
+        >ul {width: 100%; height: 100%;
+            >li {width: calc(100% / 3); height: 100%;
+                float: left;
+                &:nth-child(2){height: calc(100% - 50px);}
+                &:nth-child(1)>dl>dt{background-position: -10px -62px;}
+                &:nth-child(2)>dl>dt{background-position: -230px -62px;
+                margin-top: 50px;}
+                &:nth-child(2)>dl>dd{height: 150px;}
+                &:nth-child(3)>dl>dt{background-position: -460px -62px;
+                background-repeat: no-repeat;}
+                dl{width: 96%; height: 100%; margin-left: 2%;
+                    >dt{width: 100%; height: 336px; border-radius: 20px; box-shadow: 4px 2px 2px rgba($black, 0.9);
+                        background-image: url("../gcass_sub/sub/mouse.jpg");
+                        transition: all 0.3s ease-in;
+                        cursor: pointer;
+                        &:hover{transform: translateY(-50px);
+                        border-radius: 100px;}                   
+                        >span{@include fontBold($font: 3rem, $color: $deepYellow);
+                        transform: translateY(130px) rotate(-90deg); 
+                        display: inline-block; width: 336px;
+                        }
+                       &:hover{}
+                    }// dt
+                    >dd{margin-top: 10px; width: 100%; height: 200px; border-left: $wLine;
+                    border-right: $wLine;
+                    box-sizing: border-box;
+                        >ol{width: 90%; margin-left: 5%;
+                            height: calc(100% - 10px);
+                            padding-top: 10px;
+                            >li{width: 100%; height: 30px;
+                                margin-bottom: 5px;
+                                >a{@include fontBold($bold: normal, $line: 30px);
+                                    &:hover{}
+                                }// a
+                            }// li
+                        }// ol
+                    }// dd
+                    
+                }// dl   
+            }// li
+ 
+        }// ul
+    }// #subject
+    >#program {width: 100%; height: 310px;
+        background-color: rgba($deepGray, 0.5);
+        background-image: url("../");
+    }// #program
+}// #container

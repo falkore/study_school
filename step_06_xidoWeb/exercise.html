@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=960" />
+    <link rel="shortcut icon" 
+          type="image/x-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="./font/noto/noto.css" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/exercise.css" />
+    <!--[if lte IE 9]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+    <script src="./js/dist/PIE.js"></script>
+    <![endif]-->
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style></style>
+    <script>$(document).ready(function(){});</script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="certify">
+          <h1>본인인증 서비스</h1>
+        </header>
+        <article id="content">
+            <h2>휴대폰 인증</h2>
+            <p>입력하시는 암호화 되어 처리되면,<br />
+            어떠한 비용도 발생하지 않습니다.</p>
+            <form action="" method="post">
+                <fieldset class="telCheck">
+                    <legend>전화번호 확인</legend>
+                    <dl class="telNumber">
+                        <dt><label for="firstNum">휴대폰번호</label></dt>
+                        <dd>
+                            <select name="firstNum" id="firstNum">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="012">012</option>
+                                <option value="013">013</option>
+                                <option value="014">014</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                                <option value="0505">0505</option>
+                            </select>
+                            <span class="tellLine"><!--line--></span>
+                        </dd>
+                        <dd>
+                            <input type="text" name="midNum" id="midNum" value="" required maxlength="4" />
+                            <label for="midNum">휴대폰 가운데번호 네자리를 입력하세요.</label>
+                            <span class="telLine"><!--line--></span>
+                        </dd>
+                        <dd>
+                            <input type="text" name="lastNum" id="lastNum" value=""
+                            required maxlength="4" />
+                            <label for="lastNum">휴대폰 마지막 번호 네자리를 입력하세요.</label>
+                        </dd>
+                    </dl><!--// .telNumber-->
+                    <dl class="telecom">
+                        <dt><label for="sk">통신사선택</label></dt>
+                         <dd>
+                             <input type="radio" name="telecom" id="sk" value="sk" />
+                             <label for="sk">SK</label>
+                         </dd>
+                         <dd>
+                             <input type="radio" name="telecom" id="kt" value="kt" />
+                             <label for="kt">KT</label>
+                         </dd>
+                         <dd>
+                             <input type="radio" name="telecom" id="lg" value="lg" />
+                             <label for="lg">LG</label>
+                         </dd>
+                    </dl><!--// .telecom-->
+                </fieldset>
+                <fieldset class="check_send">
+                    <legend>전화번호 확인 및 동의</legend>
+                    <div id="check_box">
+                        <input type="checkbox" name="check" id="check" value="" />
+                        <label for="check">개인 정보 제공 및 활용에 동의합니다.</label>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="submit" name="submit" id="submit" value=" 확인" />
+                        </li>
+                        <li>
+                            <input type="reset" name="cancel" id="cancel" value="취소" />                      
+                        </li>
+                    </ul>
+                </fieldset><!--// check_send-->
+            </form>
+        </article><!--// #content-->
+        
+    </div><!--// wrap-->
+</body>
+</html>

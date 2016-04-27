@@ -1,0 +1,48 @@
+/* d09_02_position.css */
+body{height:5000px;}
+#wrap{width: 700px; height: 500px; background-color: #ccc; margin:300px auto;}
+h1{width: 100%; font-size:1.5rem; font-weight: bold; background-color: #aaf; 
+	text-align: center; }
+.position_box{width:500px; height:400px; background-color:#faa; margin:50px auto; }
+	.position_box>li{width:100px; height:100px; float: left;
+		text-align: center; line-height:100px;}
+	.static{background-color:#7cc;}
+	.fixed{background-color:#cc5;}
+	.absolute{background-color:#7fc;}
+	.relative{background-color:#3cf;}
+	.no_position{background-color:#fc4;}
+/* -------------------------------------- position이해 -----------------------------------------
+ * static : 기본(z-index, top, left, right, bottom 사용할 수 없다.)
+ * fixed : 화면 고정(스크롤 사용해도 변화가 없다.)
+ * absolute : 엄마가필요하다(기본엄마는 relative) 엄마가 없으면 고정이 안됨.
+ * relative : 엄마의 기본
+ * _________________________
+ * z-index : 레이어의 개념
+ * top, left, right, bottom : 위치를 잡아주기 위한형태(margin과 헷갈리면 안됨!!!)
+ * !!!!! position은 함부로 마구마구 사용하지 않는다.: 추후에 보정하기 힘들다~
+ * */
+
+.position_box{position: relative;}
+.static{position: static; }
+.fixed{position: fixed; bottom:0; left:500px; z-index:200;}
+.absolute{position: absolute;  right: 0; bottom:0;  z-index:100;}
+.relative{position: relative; top:100px; left:0; z-index: 500;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

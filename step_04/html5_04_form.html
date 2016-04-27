@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" href="./favicon/628-colorful-rainbow-background-vector-illustration.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon/628-colorful-rainbow-background-vector-illustration.jpg" />
+    <link rel="stylesheet" href="./css/library/reset.css" />
+    <link rel="stylesheet" href="./css/form_01.css" />
+    <title>html5_form_basic</title>
+    <style>
+
+    </style>
+</head>
+<body>
+   <div id="wrap">
+       <h1>form</h1>
+       <article id="form_box_01">
+           <form action="" method="get">
+               <fieldset>
+                   <legend> 입력테스트</legend>
+                   <label for="searchBox">Search</label>
+                   <input type="search" name="searchBox" id="searchBox" value="" placeholder="검색단어를 입력하세요." />
+                   <label for="telBox">Tel</label>
+                   <input type="tel" name="telBox" id="telBox" value="" required="required" placeholder="전화번호를 입력하세요." />
+                   <label for="emailBox">Email</label>
+                   <input type="email" name="emailBox" id="emailBox" value="" required="required" placeholder="이메일주소를 입력하세요." />
+                   <label for="urlBox">URL</label>
+                    <input type="url" name="urlBox" id="urlBox" value="" required="required" autofocus="autofocus"/>
+                   <label for="dateBox">Date</label>
+                   <input type="date" name="dateBox" id="dateBox" value="" required="required"/>
+                   
+                
+               </fieldset>
+               <fieldset>
+                   <input type="number" min="0" max="9" step="2" />                   
+                   <input type="range" min="0" max="9" step="2" />                   
+                   <input type="color" />                   
+               </fieldset>
+               <fieldset>
+                 <label for="dataList">추가내용을 입력하세요.</label>
+                  <input type="text" list="dataListBox" id="dataList" />
+                   <datalist name="" id="dataListBox">
+                           <option value="경비실에 맡겨주세요."><span>1</span></option>
+                           <option value="연락 미리 주세요."><span>2</span></option>
+                           <option value="방송해주세요."><span>3</span></option>
+                           <option value="편의점에 넣어주세요."><span>4</span></option>
+                           <option value="던지지 말아 주세요."><span>5</span></option>
+                           </datalist>
+               </fieldset>
+               <button type="submit">결과 체크</button>
+           </form>
+       </article>
+   </div><!--//#wrap-->
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="apple-touch-icon" href="#" />
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<!--[if lte IE 9]>
+		
+	<![endif]-->
+	<title>Document</title>
+	<style type="text/css">
+		.btn{cursor: pointer;}
+		input[type="submit"]{width: 100px; height: 50px; background-color: #fac;}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>form</h1>
+		<form action="#" method="post" name="">
+			<fieldset id="form_01">
+				<legend>기존 수업내용 정리</legend>
+					<label for="choco1">아이디</label>
+					<input type="text" name="choco1" id="choco1" value="" />
+					<label for="choco2">아이디</label>
+					<input type="password" name="choco2" id="choco2" value="" />
+					<label for="choco3">아이디</label>
+					<input type="hidden" name="choco3" id="choco3" value="" /><!--보이지 않는것-->
+					<!-- __________________________________________________________ -->
+					<input type="radio" name="set_r" id="radio_01" value="aaaa" />
+					<label for="radio_01">sel</label>
+					<input type="radio" name="set_r" id="radio_02" value="aaaa" checked="checked" />
+					<label for="radio_02">sel</label>
+					<input type="radio" name="set_r" id="radio_03" value="aaaa" />
+					<label for="radio_03">sel</label>
+					<input type="checkbox" name="set_c" id="ch_01" value="aaaa" />
+					<label for="ck_01">sel</label>
+					<input type="checkbox" name="set_c" id="ch_02" value="aaaa" checked="checked" />
+					<label for="ck_02">sel</label>
+					<input type="checkbox" name="set_c" id="ch_03" value="aaaa" />					
+					<label for="ck_03">sel</label>
+			</fieldset><!--// #form_01-->
+			<!-- __________________________________________________________ -->
+			<fieldset id="form_02">
+			<legend>추가 내용이해하기!</legend>
+			<input type="submit" name="" id="" value="확인 및 제출" /><!--확인/완료 버튼-->
+			<input type="reset" name="" id="cancleBtn" value="cancle" /><!--취소 버튼-->
+			<label for="cancleBtn">your cancle ok?</label>
+			<input type="button" name="" id="" value="중복확인" /><!--확인/취소외의 버튼-->
+			<input type="image" src="./img/day_03/icon_04.png" width="50" name="" id="" value="?????" /><!--이미지형태의 버튼-->
+			<input type="file" name="" id="" value="" /><!--자료첨부 버튼-->
+			<!-- __________________________________________________________ -->
+			
+			</fieldset><!--// #form_02-->
+			<fieldset id="form_03">
+				<legend>멀티기능을 하는 form</legend>
+				<p>&lt;input type="text"역활</p>
+				<label for="textBox">내용을 입력하세요.</label>
+				<textarea name="textBox" id="textBox" cols="100" rows="3" readonly="readonly">
+name=&gt; 서버언어와 연결하는 이름값 
+id=&gt; html문서내에 한번만 사용가능한 이름값이며, 연결의 기능을 한다.
+(*form영역에서는 label코드의 속성 for의 속성값과 일치해야 한다!!)
+				</textarea>
+				<!--
+					name=> 서버언어와 연결하는 이름값 
+					id=> html문서내에 한번만 사용가능한 이름값이며, 연결의 기능을 한다.
+					(*form영역에서는 label코드의 속성 for의 속성값과 일치해야 한다!!)
+				-->
+				<p>선택의 기능을하는 멀티( &lt; input type="radio" /&gt;)</p>
+				<label for="multi_sel">좋아하는 이성을 선택하세요.</label>
+				<select name="multi_sel" id="multi_sel">
+					<option>선택하세요.</option>
+					<optgroup label="남성의 경우">
+<!--						<option>-남성의 경우-</option>-->
+						<option value="송혜교">송혜교</option>
+						<option value="김태희">김태희</option>
+						<option value="전지현">전지현</option>
+						<option value="아이유">아이유</option>
+						<option value="설현">설현</option>
+					</optgroup>
+					<optgroup label="여성의 경우">
+<!--						<option>-여성의 경우-</option>-->
+						<option value="송중기">송중기</option>
+						<option value="남궁민">남궁민</option>
+						<option value="홍석천">홍석천</option>
+						<option value="이승기">이승기</option>
+						<option value="유아인">유아인</option>
+					</optgroup>
+					
+				</select>
+				<p>버튼의 또다른 형태</p>
+				<button type="button" name="" class="btn">중복확인<span class="hidden">기능</span></button>
+				
+<!--
+				<input type="button" name="" id="btn" value="중복확인" />확인/취소외의 버튼
+				<label for="btn">중복확인기능</label>
+-->
+<!--				.btn{ cursor:pointer; }-->
+			</fieldset><!--// #form_03-->
+		</form>
+	</div><!--//  #wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

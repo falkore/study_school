@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<link rel="apple-touch-icon" href="#" />
+<!--	cc:ie6-->
+	<!--[if lte IE 9]>
+	<![endif]-->
+	<title>style</title>
+	<style type="text/css">	
+		div{}/*직접선택(태그선택)*/
+		#header{}/*아이디 선택: id="header인 태그를 선택한다 */
+		h1{}/**/
+		div img{}/* div 태그내부에 자손중 img 태그를 찾아 선택한다 */
+		h1 a{}/**/
+		ul a{}/**/
+		#gnb ul>li>a{}/* #gnb 내부 자손중 ul태그를 찾아서 그 자식 li의 자식 a태그를 찾아 선택한다 */
+		#gnb>ul>li>a{}/**/
+		#gnb>ul>li>ul>li>a{}/**/
+		ul>li>a{}/**/
+		li>a{}/**/
+		div[id="gnb"]{}/* 속성선택자: div 태그속성중 id="gnb" 를 가진 태그를 선택한다 */
+		#gnb{}/**/
+		a[href="#"] {}/**/
+		a:hover{}/**/
+		a:hover > img{}/**/
+		h1{background-color: #aaa;}/**/
+		h1:hover >a{border:10px solid #fac; }/**/
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="header">
+		<h1><a href="#"><img src="./" alt=""></a></h1>
+		<div id="gnb">
+			<ul>
+				<li><a href="#">내용</a></li>
+				<li><a href="#">내용</a></li>
+				<li><a href="#">내용</a></li>
+				<li><a href="#">내용</a></li>
+				<li>
+					<ul>
+						<li><a href="#">하위내용</a></li>
+						<li><a href="#">하위내용</a></li>
+						<li><a href="#">하위내용</a></li>
+						<li><a href="#">하위내용</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div><!--// #header-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

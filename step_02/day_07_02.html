@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+     <!--[if lte IE 9]>
+    
+    <![endif]-->
+    <title>Day_07_0323</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0; border: 0;}
+        ul, ol, li{list-style: none;}/*기본 기호들(불릿기호) 없애기*/
+       
+        body{background-color: #5ff;}
+        #box{width: 600px; height: 500px; margin: 0 auto;}
+        #box>div{width:100%}
+            #header{height: 100px; background-color: #fac;}
+                h1{width: 100px; height: 100px; background-color: #fff; float: left;}
+                #nav{width: 400px; height: 50px; background-color: #eee; float: right;
+                margin-top: 50px;
+        } 
+                    #nav>ul{width: 100%; height: 90%; padding-top: 5px;}
+                    #nav>ul>li{width: 60px; height: 80%; float: left; background-color: #aaf;
+                    margin-left: 6px;}
+                     #nav>ul>li.first{margin-left: 0;}
+            #section{height: 300px;}/*전체 감싸고 있는 박스는 틀 작업 끝나면 바로 지워줘야 함*/
+                #aside{width: 30%;height: 100%; background-color: #ddd; display:inline-block; float: left;}
+                #article{width: 70%;height: 50%; background-color: #d7d; display:inline-block; float: left;}/*float:left 띄어서 옆으로 나란히 붙이는 것, float은 썼다면 같은 레벨 다 써주어야 함*/
+                #container{width: 70%;height: 50%;background-color: #dd3; float:left}
+        /*3등분 할 때 소수점 보통 6자리까지 줌.... */
+            #footer{height: 100px; background-color: #acf;}
+        
+    
+    </style> 
+</head>
+<body>
+    <div id="box">
+       <img src="finnick.gif" />finnick
+        <div id="header">
+            <h1>제목</h1>
+            <div id="nav">
+                <ul>
+                    <li class="first">list_01</li>
+                    <li>list_02</li>
+                    <li>list_03</li>
+                    <li>list_04</li>
+                    <li>list_05</li>
+                    <li>list_06</li>
+                </ul>
+            </div>
+        </div><!--//#header-->
+        <div id="section">
+        <div id="aside">aside</div>
+        <div id="article">article</div>
+        <div id="container">container</div>
+                </div><!--//#section-->
+        <div id="footer">footer</div><!--//#footer-->
+    </div><!--//#box-->
+</body>
+</html>

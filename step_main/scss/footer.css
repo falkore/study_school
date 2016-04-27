@@ -1,0 +1,55 @@
+/* line 3, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+#gcassFoot {
+  width: calc(100% - 84px);
+  height: 42px;
+  float: left;
+  padding: 20px 42px 28px; }
+  /* line 6, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+  #gcassFoot > h2, #gcassFoot > div {
+    height: 100%;
+    float: left; }
+  /* line 7, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+  #gcassFoot > h2 {
+    width: 70px;
+    background-repeat: no-repeat;
+    background-image: url("../img/index/foot/foot_logo.png");
+    background-position: center center; }
+    /* line 11, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+    #gcassFoot > h2 > span {
+      font-size: inherit; }
+  /* line 13, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+  #gcassFoot .sns {
+    width: 110px;
+    margin: 0 15px; }
+    /* line 14, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+    #gcassFoot .sns > ul {
+      width: 100%;
+      height: 30px;
+      margin-top: 12px; }
+      /* line 15, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+      #gcassFoot .sns > ul > li {
+        width: calc(100% / 3);
+        height: 100%;
+        float: left; }
+        /* line 16, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+        #gcassFoot .sns > ul > li a {
+          width: 70%;
+          margin-left: 15%;
+          font-size: 1.875rem; }
+          /* line 17, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+          #gcassFoot .sns > ul > li a:hover {
+            text-decoration: none;
+            color: #555; }
+  /* line 22, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+  #gcassFoot .addBox {
+    width: 380px;
+    background-color: #aaf; }
+  /* line 26, D:/work/falkore/falkore/study/step_main/scss/footer.scss */
+  #gcassFoot .family {
+    width: 300px;
+    height: 150px;
+    float: right;
+    background-color: #ffa;
+    margin-top: -88px; }
+
+/*# sourceMappingURL=footer.css.map */

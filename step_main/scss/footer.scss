@@ -1,0 +1,39 @@
+//footer.scss
+$img:"../img/index/foot/";
+#gcassFoot {
+  width:calc(100% - 84px); height:42px; 
+  float:left; padding:20px 42px 28px;
+  >h2,>div{height: 100%; float: left;}
+  >h2{ width: 70px;
+    background-repeat: no-repeat;
+    background-image: url($img+"foot_logo.png");
+    background-position: center center;
+    >span{font-size:inherit;}
+  }// h2
+  .sns {width: 110px; margin:0 15px;
+    >ul {width: 100%; height:30px; margin-top:12px;
+      >li {width:calc(100% / 3); height: 100%; float: left;
+          a {width:70%; margin-left:15%; font-size:1.875rem;
+          &:hover{text-decoration: none; color:#555;}
+        }// a
+      }// li
+    }// ul
+  }// .sns
+  .addBox {width: 380px; background-color: #aaf;
+    address {}// address
+    p{}// p
+  }// .addBox
+  .family {width:300px; height:150px; float:right;
+    background-color: #ffa;  margin-top:-88px;
+    ul{
+      >li{}
+    }//
+    dl{
+      dt{}
+      dd{}
+      a{}
+    }
+  }// .family
+}// #gcassFoot
+
+

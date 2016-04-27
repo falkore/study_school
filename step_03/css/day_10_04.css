@@ -1,0 +1,36 @@
+ 
+
+#wrap{width: 960px; height: 1000px; margin: 0 auto; background-color: #ffa;}
+    ul{width: 100%; height: 100%;}
+    li{width: 80px; height: 80px; margin: 2px; border: 1px solid #adf;float: left;
+        background-image: url("../img/day_01/hellvetica.jpg");background-repeat: no-repeat;
+}
+        
+
+span{width: 0; height: 0; display: block; overflow: hidden;}
+        .image_1{background-position: -476px -273px;}
+        .image_2{background-position: -398px -281px;}
+        .image_3{background-position: -324px -289px;}
+        .image_4{background-position: -208px -277px;}
+        .image_5{background-position: -110px -270px;}
+        .image_6{background-position: -535px -196px;}
+        .image_7{background-position: -446px -192px;}
+        .image_8{background-position: -372px -199px;}
+        .image_9{background-position: -287px -199px;}
+        .image_10{background-position: -197px -202px;}
+        .image_11{background-position: -117px -193px;}
+        .image_12{background-position: -33px -185px;}
+        .image_13{background-position: -511px -119px;}
+        .image_14{background-position: -410px -111px;}
+        .image_15{background-position: -332px -113px;}
+        .image_16{background-position: -248px -113px;}
+        .image_17{background-position: -177px -117px;}
+        .image_18{background-position: -121px -106px;}
+        .image_19{background-position: -54px -114px;}
+        .image_20{background-position: -514px -31px;}
+        .image_21{background-position: -444px -28px;}
+        .image_22{background-position: -366px -29px;}
+        .image_23{background-position: -284px -28px;}
+        .image_24{background-position: -204px -28px;}
+        .image_25{background-position: -128px -28px;}
+        .image_26{background-position: -37px -36px;}

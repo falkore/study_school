@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+        /*#container{
+            width: 960px; height: auto; margin: 0 auto;
+        }
+        #header{width: 100%; height: 100px;background-color: #ddd; padding-top: 20px;}
+        h1{width: 100px; height: 70px; background-color: #6df; float: left; text-align: center; line-height: 70px; font-size: 2em; color: #fff;}
+        .gnb{width: 500px; height: 40px; float: right;
+          margin-top: 40px;}
+        .gnb>li{width: 18%; height: 100%; margin-top: 10px; float: left; border-right: 2px solid #ccc; text-align: center; line-height: 40px; font-size: 1.1rem;
+        color: #0ad; font-weight: bold;}
+        .gnb>li:last-child{border: 0;}
+        .nav_1:hover{background-color: #ddf;}
+        .nav_2:hover{background-color: #fac;}
+        .nav_3:hover{background-color: #fa5;}
+        .nav_4:hover{background-color: #aa6;}
+        .nav_5:hover{background-color: #adf; border-right: 0;}*/
+    </style>
+    <script>
+      $(document).ready(function(){
+    /*-----------// 방법 1 //------------*/
+/*       document.getElementByID("container");
+         $("#container").css("width", 960+"px"); 
+         $("#container").css("height", "auto"); 
+         $("#container").css("margin", "0 auto"); 
+         $("#container").css("background-color", "#faa"); 
+          */
+    /*-----------// 방법 2 //------------*/
+    // 변수 선언하고 사용하는 것이 가장 좋아요~
+         var con=$("#container"),
+             containerCss={"width": 960+"px", "height": "auto", "margin": "0 auto", "background-color": "#faa"};
+        con.css(containerCss);
+    /*-----------// 방법 3 //------------*/
+/*        $("#container").css({
+       "width": 960+"px", "height": "auto", 
+       "margin": "0 auto", "background-color": "#faa"}); 
+      });
+ */   /*.gnb{width: 500px; height: 40px; float: right;
+          margin-top: 40px;}
+        .gnb>li{width: 18%; height: 100%; margin-top: 10px; float: left; border-right: 2px solid #ccc; text-align: center; line-height: 40px; font-size: 1.1rem;
+        color: #0ad; font-weight: bold;}
+        .gnb>li:last-child{border: 0;}
+        .nav_1:hover{background-color: #ddf;}
+        .nav_2:hover{background-color: #fac;}
+        .nav_3:hover{background-color: #fa5;}
+        .nav_4:hover{background-color: #aa6;}
+        .nav_5:hover{background-color: #adf; border-right: 0;}*/
+        
+        var head = $("#header"),
+            headCss={"width": 100 + "%", "height": 100 + "px", 
+                     "background-color": "#ddd",  "padding-top": 20 + "px"};
+        head.css(headCss);
+        $("h1").css({"width": 100 + "px", "height": 70 + "px", 
+                     "background-color": "#6df", "float": "left", 
+                     "text-align": "center", "line-height": 70 + "px", 
+                     "font-size": "2em", "color": "#fff"});
+        $(".gnb").css({"width": "500px", "height": "40px", "float": "right", 
+          "margin-top": "40px"});
+        $(".gnb").children("li")
+            .css({"width": 18 + "%", "height": 100 + "%", 
+                            "float": "left", 
+                            "border-right": "2px solid #ccc", 
+                            "text-align": "center", "line-height": 40 + "px", 
+                            "font-size": 1.1 + "rem", 
+                            "color": "#0ad", "font-weight": "bold"})
+            .last().css({"border": 0});
+          
+     /*     
+          .gnb>li{width: 18%; height: 100%; margin-top: 10px; float: left; border-right: 2px solid #ccc; text-align: center; line-height: 40px; font-size: 1.1rem;
+        color: #0ad; font-weight: bold;}
+        .gnb>li:last-child{border: 0;}*/
+});
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>logo</h1>
+            <ul class="gnb">
+                <li class="nav_1">MENU_01</li>
+                <li class="nav_2">MENU_02</li>
+                <li class="nav_3">MENU_03</li>
+                <li class="nav_4">MENU_04</li>
+                <li class="nav_5">MENU_05</li>
+            </ul><!--// .gnb-->
+        </div><!--// #header-->
+    </div><!--// #container-->
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+#gnb{width: 100%; height: 30px; background-color: #888; float: left;}
+#gnb>ul{width: 435px; height: 100%; float: right;}
+#gnb>ul li{width: 95px; height: 100%; float: left;}
+#gnb>ul li:nth-child(1):hover{background-image: url("../img/index/nav/study.png");}
+#gnb>ul li:nth-child(2){}
+#gnb>ul li:nth-child(3){width: 245px;}
+#gnb>ul a{width: calc(100%-2px); margin: 0 1px;}
+    #gnb>ul li:nth-child(1){background-image: url("../img/index/nav/home.png");}
+    #gnb>ul li:nth-child(2){background-image: url("../img/index/nav/study.png");}
+    #gnb>ul li:nth-child(3){background-image: url("../img/index/nav/education.png");}

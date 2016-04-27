@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/lib/reset.css" />
+	<title>Document</title>
+	<style>
+		header,article,footer,nav{display: block;}
+		header, article, footer{width:600px; height: 300px; margin: 0 auto;
+			background-color: #acf; margin-bottom:5px;}
+		h1{width: 100%; height: 30px; background-color: #fff;}
+		nav{width: 90%; height: 200px; margin-left: 5%; background-color: #ddd;}
+		nav>dl{width: 100%; height: 100%;}
+		dt{width:10%; height: 100%; float:left; background-color: #fa9; display:none;}
+		dd{width: 10%; height: 100%; float:left; background-color: #aa0; transition:all 1s; display:none;}
+		dl:hover >* {display: block;}
+		dt:hover + dd{background-color: #fff; }
+		dt:active ~ dd{width:0; overflow: hidden;}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>선택자에 대해 알아보자</h1>
+		<nav>
+			<dl>
+				<dt>네비제목</dt>
+				<dd>네비내용_01</dd>
+				<dd>네비내용_02</dd>
+				<dd>네비내용_03</dd>
+				<dd>네비내용_04</dd>
+				<dd>네비내용_05</dd>
+			</dl>
+		</nav>
+	</header>
+	<article></article>
+	<footer></footer>
+</body>
+</html>
+
+
+
+
+
+

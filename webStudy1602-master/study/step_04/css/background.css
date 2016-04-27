@@ -1,0 +1,39 @@
+/*  background.css  */
+#wrap{width: 960px;height: 1800px;margin: 0 auto;background-color: #ccc;}
+#wrap  *{background-repeat:no-repeat; }
+#wrap > * {width: 100%; border-bottom:1px solid #ddd;}
+	#webHead {height:300px; background-color:#fac;}
+	#webHead h1 {width: 100%; height: 40px; line-height: 40px;
+		text-align: center; font-size:1.5em; font-weight: bold; } 
+
+	#banner {height:400px; background-image: url("../img/background/icon_01.png"); 
+		background-size: contain;}
+
+		.viewH2{width:100%; height:30px; line-height:30px; text-indent:1rem; 
+			font-size:1.3em; font-weight:bold; 
+			background-color: #fff; transition:all 1s;} 
+		.viewH2:hover{background-color: rgba(255,255,255,0.2)}
+	#banner2 {height:400px;  background-image: url("../img/background/icon_01.png");
+		background-size: cover;}
+
+	#widthBox {height:500px; background-color:#acf;}
+	#widthBox>div{width: 50%; height: 100%; float: left; }
+	#widthBox h3{width: 100%; height: 15px; border-bottom: 1px solid; 
+		text-shadow:1px 1px 1px #333; color:#fff; font-size:1rem; padding:5px; text-indent:1rem;}
+	#wrap #widthBox .box01 {background-image: url("../img/background/bg_01.jpg");
+		background-attachment:fixed; background-size:50%; }
+	#widthBox .box01 > h3 {}
+	#widthBox .box02 {background-image: url("../img/background/bg_01.jpg");
+		background-attachment:scroll;}
+	#widthBox .box02 > h3 {}
+
+
+
+
+
+
+
+
+
+
+

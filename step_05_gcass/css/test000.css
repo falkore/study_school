@@ -1,0 +1,7 @@
+#wrap { width: 1600px; height: auto;
+    /*background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/concert.gif");
+    background-size: 100%;*/
+}
+video{min-width: 1000px; width: 100%; height: auto;}

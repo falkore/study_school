@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" href="#" />
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<!--[if lte IE 9]>
+		
+	<![endif]-->
+	<title>border_padding</title>
+	<style type="text/css">
+/*		RESET CSS */
+		* {margin: 0; padding: 0; border:0; vertical-align:top;}
+		h1,h2,h3,h4,h5{font-size:100%;}
+		ul, ol, li {list-style:none;}
+		.clearfix::after, .clearfix::before{ content:''; clear:both; display: block; } 
+		
+/* * 
+		 * border는 margin/padding에서처럼 여러방향으로 한꺼번에 처리하기 힘들다.
+		 * border는 부피+크기를 가질수 있다.
+		 * border는 width, style, color 3가지 기능을 가지는데, 한꺼번에 줄여서 사용 가능하다.
+		 * border: 선두께  모양  색상; 
+		 * +++ 속성값 사이에는 ,나 ;이나 :등의 표기를 하지 않고 띄어쓰기를 사용한다.~ +++
+		 * -----------------------------------------------------------------------------------
+		 * outline은 주어진 크기에서 위치가 이동하는 offset 기능이 있다.
+		 *  단, IE 에서는 처리되지 않는다(outline-offset)
+		 *  border와 의 차이점은 부피를 가지지 않는다(다른 객체와 밀리지 않는다.)
+		 *  별도의 한쪽 선만 만들수 없다~~~!!!
+		 * */
+		#wrap{width: 900px; height:780px; background-color:#ccc; margin:0 auto;}
+		h1{width: 100%; height:30px; background-color: #fa0; }
+		ul{width:100%; background-color:#acc;}
+		li{width:100px; height:100px; text-align:center; line-height:100px; float:left;}
+		.box_01{background-color:#aac; 
+				border-width:20px; border-style:ridge; border-color:#fcc;}
+		.box_02{background-color:#6ac; border:5px dashed #0cf;}
+		.box_03{background-color:#a71; 
+			border-top:5px solid #fff; border-bottom:5px solid #fa0; 
+			border-left:10px solid #777; border-right: 10px solid #00a;	}
+		
+		.box_04{background-color:#f50; 
+			border:10px double;
+			border-top-color:#a74; 
+			border-right-color:#874; 
+			border-bottom-color:#07f; 
+			border-left-color:#0a4 ;
+		}
+		.box_05{background-color:#cf9; outline:4px solid #fff; outline-offset:10px;}
+		
+		
+		#sub_box{width:100%; height:50px; background-color:#7ff;}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>border에대해 ... </h1>
+		<ul class="clearfix">
+			<li class="box_01">border1</li>
+			<li class="box_02">border2</li>
+			<li class="box_03">border3</li>
+			<li class="box_04">border4</li>
+			<li class="box_05">outline</li>
+		</ul>
+		<div id="sub_box"></div>
+	</div><!--// #wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+#wrap { width : 960px ; height : 1600px ; margin : 0 auto ; background-color : #ccc ;}
+
+#web_head { width : 100% ; height : 400px ; background-color : #dfdfdf ; padding-top : 50px ;}
+
+#web_head h1 {width: 500px;
+height: 92px;background-color: #aff ; margin : auto ;}
+h1>a{width: 100%; height: 100%; display: block;}
+h1>a>span{height: calc(100% - 40px); float: left; display: block;
+                    background-repeat: no-repeat; background-position: center;
+                    padding: 20px 0;}
+h1 .h_btn01{width: 10px; background-image: url("../css3_01/img/background/btn_01.png");}
+h1 .h_btn02{width: calc(100% - 20px); background-image: url("../css3_01/img/background/btn_02.png");
+            background-repeat: repeat-x;
+            text-align: center;font-size: 1.2rem; color: #fff;}
+.h_btn02>i{font-size: 1rem; color: #00f;}
+
+h1 .h_btn03{width: 10px; background-image: url("../css3_01/img/background/btn_03.png");}
+
+#banner { width : calc(100% - 100px) ; height : calc(500px - 400px) ; 
+            background-color : #faa ; 
+            background-image : url("../css3_01/img/background/puzzle_01.png"),/*가장 밖의*/
+                                url("../css3_01/img/background/puzzle_03.png"),/*두번째*/
+                                url("../css3_01/img/background/puzzle_02.png")/*마지막*/
+                                
+                                                ;
+            background-position : center top, center bottom, center ;
+            background-repeat : no-repeat, no-repeat, repeat-y;
+            padding: 200px 50px;
+}/*이렇게 설정하면배경이미지를 height 크기만 조정하면 알아서 늘어나고 줄어듦*/
+
+#banner>h2 {width: 200px; height: 50px; font-size: 1.5rem; color: #fff; font-weight: bold;
+                        text-align: right center; line-height: 50px;}
+#banner>p{width: 100%; text-overflow: ellipsis;color: #f2f3f3; text-indent: 10px; text-transform: capitalize;}
+#content {width: 100%; height: 200px; background-image: linear-gradient(45deg, #fa0 , #0af 50%, #f07);}
+
+#content h2 {}
+
+#web_footer {width: 100%; height: 400px; 
+background-image: radial-gradient( #fad, #7ff 35%, #faa 50%);}
+
+#web_footer h2 {}

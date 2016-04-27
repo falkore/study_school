@@ -1,0 +1,10 @@
+/* preprosTest.scss
+ DOS 창 안써도 되는 scss->css 변환 프로그램(한글 가능)*/
+$box: "inherit";
+
+#wrap{width: 100%; height: 100%;
+    background-color: #fad; margin: 0 auto;
+    >#header{width: $box;}
+    >#container{width: $box;}
+    >#footer{width: $box;}
+}// #wrap

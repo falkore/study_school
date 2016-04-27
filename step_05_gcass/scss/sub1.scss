@@ -1,0 +1,20 @@
+//sub1.scss
+
+@import 'basic.scss';
+@import 'subWrap.scss';
+@import 'gnb.scss';
+@import 'header.scss';
+@import 'subCon.scss';
+@import 'footer.scss';
+
+//sub1.scss
+
+body{background-image: url("../gcass_sub/sub/bg01_patt.jpg");
+    background-attachment: fixed;}
+#wrap{min-height: 1100px; height: auto; position: relative;}
+#gnb, .topLeft, .topRight{position: fixed; top: 0; right: 50%; 
+    margin-right: -480px;}
+#gcassHead{background-color: transparent; 
+    position: fixed; top: 30px; left: 50%; margin-left: -480px;}
+#gcassFoot{position: absolute; bottom: 0; display: none;}
+.bottomBox{}

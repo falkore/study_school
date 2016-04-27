@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1.0" />
+<!--	파비콘 설정 -->
+	<link rel="apple-touch-icon" href="#">
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+<!--	구형브라우저(ie 6,7,8 버전문제)-->
+<!--[if lt IE 9]>
+	<script type="text/javascript">
+		alert("브라우저를 업데이트 하거나 크롬을 사용하세요.");	
+	</script>
+<![end if]-->
+	<title>외부 문서 불러오기!!</title>
+	<style type="text/css">
+		#wrap{width:600px; height:1000px; background-color: #ddd;
+			margin: 0 auto;}
+		h1{width: 90%; background-color: #ccc; margin: 0 auto;
+			text-align: center;}
+		p{width: 80%; margin: 0 auto; background-color: #fff; padding:50px;}
+		h2{width: 100%; color:#fa0; border-bottom:1px solid #333;}
+		/*가상 선택자*/
+		h2:hover{color:#333;}/* 마우스 올렸을때 */
+		h2:active{color:#0af;}/* 마우스 눌렀을때 */
+		h2::before{content: "**이전에추가"; color:#f0a;}
+		h2::after{content: "이후에추가!!"; color:#a0a;}
+		
+		.fBox{border:2px solid #0ac; margin:10px; width:90%; height:200px; margin:0 auto; }
+		.tbox{border:2px solid #fff;}
+		iframe{width: 100%; height: 100%;}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>iframe</h1>
+		<p>외부문서를 불러와서 내 브라우저 화면에 보여주려면,
+		일부 공간을 할당하고, 원하는 경로값을 넣어준다. <br />
+		iframe을 사용할때에는 블록태그를 감싸주고 사용하는것이 좋다!
+		</p>
+		<h2>다른파일</h2>
+		<div class="fBox">
+			<iframe src="./day_04_01.html" frameborder="0"></iframe>
+		</div>
+		<h2>외부 문서</h2>
+		<div class="fBox tbox">
+			<iframe src="https://www.youtube.com/embed/JWZmdWP67DA" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

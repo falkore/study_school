@@ -1,0 +1,41 @@
+/* scssTest.scss */
+/* line 16, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+#wrap {
+  width: 960px;
+  margin: 0 auto; }
+  /* line 19, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+  #wrap > #header {
+    width: 100%; }
+    /* line 21, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+    #wrap > #header > h1 {
+      width: 100px;
+      height: 100px;
+      background-color: #fac; }
+      /* line 25, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+      #wrap > #header > h1 > a {
+        width: 90%;
+        height: 90%;
+        background-color: #aac;
+        font-size: 1.333rem; }
+  /* line 35, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+  #wrap > #article > ul {
+    width: 400%;
+    height: 100px; }
+    /* line 8, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+    #wrap > #article > ul li {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      /* line 9, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+      #wrap > #article > ul li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-repeat: no-repeat; }
+        /* line 11, D:/work/falkore/falkore/study/step_main/scss/scssTest.scss */
+        #wrap > #article > ul li > a > span {
+          width: 0;
+          height: 0;
+          overflow: hidden; }
+
+/*# sourceMappingURL=scssTest.css.map */

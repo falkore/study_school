@@ -1,0 +1,63 @@
+/*day_11_kwater_header.css*/
+
+/*------header--------*/
+#header{height:72px;background-color: #fff;padding-top: 18px;}
+        h1{width: 100px;height: 60px;float: left;}
+        h1>a{width: 100%;height: 100%;display: block;
+            background-image: url(../day_10/images/logo.jpg);
+            background-repeat:no-repeat; background-position: right center;
+}
+/*a 태그는 인라인속성이므로로 block 처리해서 백그라운드 이미지 넣어줌*/
+/*background 삼형제 : image, repeat, position*/
+        
+
+/*------ #gnb--------*/
+        #gnb{width: 232px; height: 18px; float: right;}
+            #gnb>ul{width: 100%;height: 100%;}
+            #gnb>ul>li{height: 100%;float: left;}
+            #gnb>ul>li>a{height: 100%;display: block;float: left;
+                    background-repeat: no-repeat; background-position: center center;}
+
+                .gnb_01{width: 42px;}
+                .gnb_02{width: 52px;}
+                .gnb_03{width: 60px;}
+                .gnb_04{width: 76px;}
+
+                .gnb_01>a{width: 38px;background-image:url("../day_10/images/gnb_01.jpg");}
+                .gnb_02>a{width: 48px;background-image:url("../day_10/images/gnb_03.jpg");}
+                .gnb_03>a{width: 56px;background-image:url("../day_10/images/gnb_04.jpg");}
+                .gnb_04>a{width: 100%;background-image:url("../day_10/images/gnb_05.jpg");}
+            #gnb>ul>li>.gnb_bar{width: 4px;height: 100%;float: left;display:block;
+            background-image:url("../day_10/images/gnb_bar.jpg");
+            background-repeat: no-repeat; background-position: center center;}
+
+/*------ #top_navi--------*/
+#top_navi{width: 795px;height: 34px;margin-top: 4px;float: right;}
+#top_navi>ul{width: 100%;height: 100%;}
+#top_navi>ul>li{height: 100%;float: left;margin-right: 30px;background-color: #fff;}
+#top_navi>ul>li>a{width: 100%;height: 100%;display: block; float: left;
+background-repeat: no-repeat;
+background-position: center center;}
+
+.t_navi_01{width: 132px;}
+.t_navi_02{width: 76px;}
+.t_navi_03{width: 80px;}
+.t_navi_04{width: 80px;}
+.t_navi_05{width: 58px;}
+.t_navi_06{width: 78px;}
+#top_navi .t_navi_07{width: 108px;margin-right: 0;}
+
+
+.t_navi_01>a{background-image: url("../day_10/images/t_navi_01.jpg");}
+.t_navi_02>a{background-image: url("../day_10/images/t_navi_02.jpg");}
+.t_navi_03>a{background-image: url("../day_10/images/t_navi_03.jpg");}
+.t_navi_04>a{background-image: url("../day_10/images/t_navi_04.jpg");}
+.t_navi_05>a{background-image: url("../day_10/images/t_navi_05.jpg");}
+.t_navi_06>a{background-image: url("../day_10/images/t_navi_06.jpg");}
+.t_navi_07>a{background-image: url("../day_10/images/t_navi_07.jpg");}
+/*#gnb>ul>li:hover>ol{display: block;}
+            #gnb ol{width: 300%;height: 100%;margin-top: -56px;background-color: #aaa;overflow:hidden;display: none;}*/
+/*ol이 li 의 하위메뉴이기 때문에 밑으로  붙음 그래서 마진 탑 마이너스로 끌어올려 줌*/
+            #gnb ol>li{}
+
+   

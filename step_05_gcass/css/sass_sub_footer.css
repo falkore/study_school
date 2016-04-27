@@ -1,0 +1,29 @@
+#gcassFoot{width: calc(100% - 84px); height: 42px; padding: 20px 42px 28px; border-top: 1px solid #888;
+    float: left; background-color: #fff;}
+#gcassFoot>h2, #gcassFoot>div{height: 100%; float: left;}
+#gcassFoot>h2{width: 70px;
+    background-repeat: no-repeat;
+    background-image: url("../img/index/foot/foot_logo.png");
+    background-position: center center;}
+
+/* font-size: inherit 의 inherit 은 상속의 의미 . 부모 속성 가져오기*/
+    #gcassFoot>h2>span{font-size: inherit;}
+.sns{width: 110px; margin: 0 15px;}
+    .sns>ul{width: 100%; height: 30px; margin-top: 12px;}
+    .sns>ul>li{width: calc(100% / 3); height: 100%; float: left;}
+    .sns>ul a{width: 70%; margin-left: 15%; font-size: 1.875rem;}
+/*기본사이즈 16px .....30 / 16 ...1.875rem*/
+    .sns>ul a:hover{text-decoration: none; color: #333;}
+.add{width: 380px; background-color: #afd;}
+    .add h3{}
+    .add address{}
+    .add p{}
+#gcassFoot .family{width: 300px; height: 150px; background-color: #3dd;
+    float: right; margin-top: -88px;}
+    .family ul{}
+    .family li{}
+    .family dl{}
+    .family dt{}
+    .family dt a{}
+    .family dd{}
+    .family dd a{}

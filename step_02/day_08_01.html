@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+     <!--[if lte IE 9]>
+    
+    <![endif]-->
+    <title>MARGIN_margin</title>
+    <style type="text/css">
+        /*margin : 외부여백: 공간을 가지는 여백
+            *margin(하나) : 위, 아래, 오른쪽, 왼쪽 모두같은 값
+            *margin(둘) : 위아래, 오른쪽왼쪽 두개의 여백
+            *margin(셋) : 위, 좌우, 아래
+            *margin(넷) : 위, 오른쪽, 아래, 왼쪽 (시계방향)
+            *margin(일부) : margin-top, margin-right, margin-left, margin-bottom 사용
+        */
+        
+        /*RESET CSS//...................*/
+        *{margin: 0; padding: 0; border: 0; vertical-align: top;}
+        h1, h2, h3, h4, h5{font-size: 100%} /*폰트 사이즈 기준 사이즈 그대로 감*/
+        ul, ol, li{list-style: none;}
+       /* .clearfix::after, .clearfix::before{content:''; clear: both;display: block;}*/
+        
+        /*...................//RESET CSS*/
+        
+        
+        #wrap{width: 900px; height:800px;background-color:#ddd;}
+        h1{width:100%;height:30px; background-color: #fac;}
+        ul{width: 100%; height: 100px; border: 3px solid}/*ul과 li의 높이값 동일하게*/
+        li{width: 100px;height: 100px;text-align: center;line-height: 100px; float: left;}
+        /*ling-height 는 한 줄일 때 높이만큼 줘서 박스의 가운데 오게 함 ...*/
+        /*text-align 은 가운데 정렬 (좌 우)*/
+        
+        .box_01{background-color: #fa3; margin: 10px;}/*상, 하, 좌, 우*/
+        .box_02{background-color: #de3; margin: 10px 20px;}/* 상하  10  ,,,좌우  20*/
+        .box_03{background-color: #ac4; margin: 10px 20px 30px;}/*상 10 ,,, 좌우 20 ,,, 하 30 */
+        .box_04{background-color: #adf; margin: 10px 20px 30px 40px;}/*시계방향: 위 10 ,,, 오른쪽 20 ,,, 아래 30 ,,, 왼쪽 40*/
+        .box_05{background-color: #fdf; margin-left: 40px; margin-top: 20px;}
+        
+        #sub_box{width: 100%; height: 50px; background-color: #5ff;}
+    
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>margin에 대해서...</h1>
+            <ul>
+                <li class="box_01">margin하나</li>
+                <li class="box_02">margin둘</li>
+                <li class="box_03">margin셋</li>
+                <li class="box_04">margin넷</li>
+                <li class="box_05 clearfix">margin일부</li>
+            </ul>
+            <div id="sub_box"></div><!--//#sub_box-->
+    </div><!--//#wrap-->
+</body>
+</html>
