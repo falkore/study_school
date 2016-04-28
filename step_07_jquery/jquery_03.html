@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+        li{width: 300px; height: 50px; border: 1px solid #777; cursor: pointer;}
+    </style>
+    <script>
+/*        $(function(){
+            var link = ["http://naver.com", 
+                        "http://daum.net", 
+                        "http://google.com",
+                        "http://greenart.co.kr", 
+                        "http://w3schools.com",
+                        "http://gdweb.co.kr",
+                        "http://behance.net",
+                        "http://cssawds.com",
+                        "http://cgv.co.kr",
+                        "http://falkore.dothome.co.kr"];
+            
+               $("li").on("click", function(){
+               $(this).each(function(){
+                   $(this).css({backgroundColor: "#f9a"}); 
+                   $(this).html("<a href=\"#\">link</a>"); 
+                   $(this).find("a").text("따옴표를 조심하자 특히, 시작과 끝부분~")
+                   .attr("href", link.fn(length); 
+                   
+            });
+          });
+        });*/
+/*    $(function(){    
+        $(window).on("resize", function(){
+            $("body").css("background-color", "#afd");
+        });
+    });// 인터넷 창이 크기가 바뀌면 배경색이 #afd 로 바뀜
+*/
+   $(function(){   
+      var winSize = function(){
+          var w = $(window).width();
+            if(w <= 480) {
+                $("body").css("background-color", "#afd");
+            } else if(w > 480 && w <= 640) {
+                $("body").css("background-color", "#f2d");
+            } else if(w > 640 && w <= 768) {
+                $("body").css("background-color", "#faa");
+            } else if(w > 768 && w <= 1024) {
+                $("body").css("background-color", "#adf");
+            } else if(w > 1024 && w <= 1200) {
+                $("body").css("background-color", "#dad");
+            } else {
+                $("body").css("background-color", "#acc");
+            }
+      };
+       winSize();
+       
+       $(window).on("resize", function(){
+// 480 --- 640 --- 768 --- 1024 --- 1200 --- 1600 --- 1920 --- 2560 --- 3200 ---3800
+            winSize();
+        });
+    });
+        
+    </script>
+</head>
+<body>
+    <ul>
+        <li>list_01</li>
+        <li>list_02</li>
+        <li>list_03</li>
+        <li>list_04</li>
+        <li>list_05</li>
+        <li>list_06</li>
+        <li>list_07</li>
+        <li>list_08</li>
+        <li>list_09</li>
+        <li>list_10</li>
+    </ul>
+</body>
+</html>
