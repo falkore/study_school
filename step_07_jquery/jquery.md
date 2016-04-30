@@ -100,6 +100,7 @@ ex) click, dblclick, drag, keydown, keyup, scroll,
     $(window).on("resize", function(){
         $("body").css("background-color", "#afd");
     });
+<<<<<<< HEAD
     
     
 ---
@@ -150,6 +151,8 @@ ex) click, dblclick, drag, keydown, keyup, scroll,
 
 ### if
  조건문
+=======
+>>>>>>> 2717f307e75aa3305521ccd64743c2d0fd399128
 
     
 
