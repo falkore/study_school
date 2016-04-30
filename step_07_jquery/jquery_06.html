@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+/*      @media screen and (max-width: 480px){
+            body{background-color: #ddd;}
+        }
+        @media screen and (min-width: 481px)and (max-width: 640px){
+            body{background-color: #fad;}
+        }
+        @media screen and (min-width: 641px)and (max-width: 768px){
+            body{background-color: #adf;}
+        }
+        @media screen and (min-width: 769px)and (max-width: 1024px){
+            body{background-color: #7fa;}
+        }
+        @media screen and (min-width: 1025px)and (max-width: 1200px){
+            body{background-color: #fa4;}
+        }
+        @media screen and (min-width: 1201px){
+            body{background-color: #333;}
+        }
+*/
+    </style>
+    <script>
+        $(function(){
+            var 
+                win = $(window),
+                bodyBox = $("body");
+                
+            var viewBox = function(){
+                var viewH = win.width();
+                if(viewH <= 480){
+                bodyBox.css({"background-color": "#ddd"});
+            }
+            else if(viewH <= 640){
+                bodyBox.css({"background-color": "#fad"});
+            }
+            else{
+                bodyBox.css({"background-color": "#fa4"});
+            }
+            };// viewBox
+            viewBox();
+            
+            win.on("resize", function(){
+               viewBox(); 
+            });// resize
+            
+        });// jQuery
+    </script>
+</head>
+<body>
+
+</body>
+</html>

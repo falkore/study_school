@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+        header{width: 500px; height: auto; margin: 0 auto;
+               padding: 5px; background-color: #ffa;}
+        button{width: 500px; height: 50px; color: #faa; background-color: #dda; margin: 0 auto;
+               cursor: pointer; display: block;}
+        div{width: 500px; height: 500px; margin: 0 auto; background-color: #aee;
+            display: none;
+        }
+    </style>
+    <script>
+        $(function(){
+//            $("body").css("backgroundColor", "#fac");
+//            $("body").delay(1000).animate({"backgroundColor": "#adf"},3000,"easeInOutBounce");
+//            $("button").on("click", function(){
+//                $("div").slideToggle(2500,"easeInOutBounce");
+//            });
+            var headBox = $("header"),
+                box = $("div");
+                timing = 500;
+            
+            headBox
+                .on("mouseenter", function(){
+                box.stop().slideDown(timing, function(){
+                    box.animate({"backgroundColor": "#d09"}, timing)
+                });
+            })
+                .on("mouseleave", function(){
+                box.stop().slideUp(timing, function(){
+                    box.css({"backgroundColor": "#aee"})
+                });
+            });// 콜백함수(부르고 부르고 부르고.....)
+        });// jQuery
+    </script>
+</head>
+<body>
+ <header>
+        <button>누르기</button>
+        <div>       
+        </div>
+ </header>
+<!--
+    <script>
+        (function($){
+            $("body").css("backgroundColor", "#fac");
+        })(this.jQuery);
+    </script>--> 
+</body>
+</html>

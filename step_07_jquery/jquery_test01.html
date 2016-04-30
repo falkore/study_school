@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+        #wrap{width: 960px; height: auto; margin: 0 auto;
+             background-color: #5fa;}
+        #wrap>div{width: 100%; height: 240px;
+                 background-color: #adf;}
+        #wrap>div>ul{width: 100%; height: 720px; float: left; display: none;}
+        #wrap>div>ul>li{width: 100%; height: calc(100% / 3); float: left; display: none; background-color: #aa5;
+                        color: #333; font-size: 2rem; text-align: center; line-height: 240px;}
+        #wrap>div>ul>li:nth-of-type(1){background-color: #a8f;}
+        #wrap>div>ul>li:nth-of-type(2){background-color: #9dd;}
+        #wrap>div>ul>li:nth-of-type(3){background-color: #66a;}
+        #wrap>.container:nth-of-type(1){background-color: #faa;}
+        #wrap>.container:nth-of-type(2){background-color: #af4;}
+        #wrap>.container:nth-of-type(3){background-color: #faf;}
+        #wrap>.container:nth-of-type(4){background-color: #f0d;}
+
+    </style>
+    <script>
+        $(function(){
+           var box = $(".container"),
+               menu = $("ul"),
+               menuList = $("li");
+            
+           var accordion = function(){
+               box.on("mouseenter", function(){
+                   menu.stop().slideDown(2000, function(){ 
+                       
+                   });
+               })// box.on mouseenter
+               menu.on("mouseenter", function(){
+                   menuList.stop().slideDown(2000, function(){ 
+                       
+                   });
+               })// box.on mouseenter
+           };// accordion
+            accordion();
+            
+        });// jQuery
+
+        
+/*        var headBox = $("header"),
+                box = $("div");
+                timing = 500;
+            
+            headBox
+                .on("mouseenter", function(){
+                box.stop().slideDown(timing, function(){
+                    box.animate({"backgroundColor": "#d09"}, timing)
+                });
+            })
+                .on("mouseleave", function(){
+                box.stop().slideUp(timing, function(){
+                    box.css({"backgroundColor": "#aee"})
+                });
+            });*/
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <ul>
+                <li>I want</li>
+                <li>I want</li>
+                <li>I want</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>to get</li>
+                <li>to get</li>
+                <li>to get</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>happiness and</li>
+                <li>happiness and</li>
+                <li>happiness and</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>new job</li>
+                <li>new job</li>
+                <li>new job</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
